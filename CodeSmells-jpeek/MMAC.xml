@@ -1,0 +1,4799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metric xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        date="2020-03-26T03:03:58.975Z"
+        schema="xsd/skeleton.xsd"
+        version="0.30.9"
+        xsi:noNamespaceSchemaLocation="xsd/metric.xsd">
+   <title>MMAC</title>
+   <description>
+        Method-Method through Attributes Cohesion (MMAC).
+        The MMAC is the average cohesion of all pairs of methods.
+        In simple words this metric shows how many methods have the
+        same parameters or return types. When class has some number
+        of methods and most of them operate the same parameters it
+        assumes better. It looks like class contains overloaded
+        methods. Preferably when class has only one method with
+        parameters and/or return type and it assumes that class
+        do only one thing. Value of MMAC metric is better for these
+        one classes.
+        Metric value is in interval [0, 1]. Value closer to 1 is better.
+      </description>
+   <app element="false"
+        id="C:\Users\suj19\IdeaProjects\cs515-801-s20-Eswaran-pdf">
+      <package element="false" id="org.pdfsam.ui.log">
+         <class color="green" element="false" id="ErrorLoggedEvent" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="LogAreaVisiblityChangedEvent"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="LogLevelTest" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="LogListView$TextCell"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="LogMessageBroadcasterTest$Config"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="LogListView" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="LogMessageBroadcaster"
+                value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="LogMessageTest" value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="LogListViewTest" value="NaN">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="LogPane" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="LogPaneTest" value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="LoggerConfig" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="MaxLogRowsChangedEvent"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="LogPaneTest$Config" value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="LogStage" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="UpToInfoFilter" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="LogMessage" value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="LogMessageBroadcasterTest"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.test">
+         <class color="green"
+                element="false"
+                id="ClearEventStudioRule"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DefaultPriorityDashboardItem"
+                value="NaN">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultPriorityTestModule"
+                value="0.0667">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="HighPriorityTestModule"
+                value="0.0667">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="HitConsumer" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="HitTestListener" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="InitializeAndApplyJavaFxThreadRule"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="JavaFXInitlializer"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="JavaFXThreadRule" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="InitializeJavaFxThreadRule"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="LowPriorityTestModule"
+                value="0.0667">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.ui.event">
+         <class color="green"
+                element="false"
+                id="SetActiveDashboardItemRequest"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="SetTitleEvent" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.ui.selection.multiple">
+         <class color="green"
+                element="false"
+                id="SelectionTableToolbar$MoveUpButton"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="SelectionTableToolbar$RemoveButton"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SelectionTableToolbar$MoveDownButton"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="SelectionTableWithoutMoveTest"
+                value="0">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="SelectionTableWithoutDuplicateTest"
+                value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="SelectionTableToolbar$BaseMoveSelectedButton"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="SelectionTableToolbar$ClearButton"
+                value="0.3333">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SelectionTableRowDataTest"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SelectionTableRowData"
+                value="NaN">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="SelectionChangedEvent"
+                value="0">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PageRangesColumnTest"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="SelectionTableToolbarTest"
+                value="0">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="SelectionTableToolbarWithoutMoveTest"
+                value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="PaceColumn" value="0">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="PaceColumnTest" value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="ReverseColumn" value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SelectionTableToolbar"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="PageRangesColumn" value="0">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DuplicateSelectedEvent"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="LongColumnTest" value="NaN">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="LoadingColumn$LoadingStatusCell"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="MultipleSelectionPane"
+                value="0.1667">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="SelectionTableToolbar$AddButton"
+                value="0.3333">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="LoadingColumnTest"
+                value="NaN">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="LoadingColumn" value="0">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="IndexColumn" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="IntegerColumnTest"
+                value="NaN">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="FileColumnTest" value="NaN">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="SelectionTable" value="0.0028">
+            <vars>
+               <var id="k">10</var>
+               <var id="l">8</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="TooltippedTextFieldTableCell"
+                value="0.0833">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SelectionChangedEventTest"
+                value="NaN">
+            <vars>
+               <var id="k">14</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="SelectionTableTest" value="0">
+            <vars>
+               <var id="k">38</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.ui.prefix">
+         <class color="green"
+                element="false"
+                id="PrefixField$PrefixMenuItem"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="PrefixField" value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="PrefixFieldTest" value="0">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="PrefixPaneTest" value="0">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="PrefixPane" value="0.0071">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.splitbysize">
+         <class color="green"
+                element="false"
+                id="SplitBySizeParametersBuilderTest"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="SplitBySizeParametersBuilder"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="SizeUnitRadio" value="0.3333">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="SplitOptionsPane" value="0.0556">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="SplitOptionsPaneTest" value="0">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SizeUnitRadioTest"
+                value="NaN">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="SplitBySizeModule$ModuleConfig"
+                value="0.025">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="SplitBySizeModule"
+                value="0.0159">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="SizeUnitTest" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.ui.dashboard">
+         <class color="red" element="false" id="Dashboard" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="DashboardButtonTest" value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="DashboardConfig" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="QuickbarDashboardButtonsPane"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="QuickbarDashboardButtonsPaneTest"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PreferencesDashboardItem"
+                value="NaN">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DashboardTest$DisabledItem"
+                value="NaN">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="DashboardTest" value="NaN">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DashboardTest$Config"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DashboardItemPane"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="AboutDashboadItem"
+                value="NaN">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ModulesDashboardItem"
+                value="NaN">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DashboardItemPaneTest"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="DashboardButton" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DashboardTest$EnabledItem"
+                value="NaN">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.ui.info">
+         <class color="green" element="false" id="BaseInfoTab" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="KeywordsTabTest" value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="InfoPane" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="KeywordsTab" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="InfoStage" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="InfoStageController"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="InfoStageTest" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="InfoStageTest$Config"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="SummaryTab" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="SummaryTabTest" value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.i18n">
+         <class color="green"
+                element="false"
+                id="DefaultI18nContextTest"
+                value="NaN">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SetLocaleEventTest"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DefaultI18nContext$DefaultI18nContextHolder"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="DefaultI18nContext" value="0.15">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="SetLocaleEvent" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.support.params">
+         <class color="red"
+                element="true"
+                id="AbstractPdfOutputParametersBuilder"
+                value="0.0333">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="ConversionUtils" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="AbstractParametersBuilder"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ConversionUtilsTest"
+                value="NaN">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="MultiplePdfSourceMultipleOutputParametersBuilder"
+                value="0">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="SinglePdfSourceMultipleOutputParametersBuilder"
+                value="0">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="SplitParametersBuilder"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.ui.workspace">
+         <class color="red"
+                element="true"
+                id="SaveWorkspaceEvent"
+                value="0.3333">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="LoadWorkspaceEvent" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="WorkspaceLoadedEvent"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="LoadWorkspaceEventTest"
+                value="NaN">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="BaseWorkspaceEvent"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SaveWorkspaceEventTest"
+                value="NaN">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="WorkspaceLoadedEventTest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.update">
+         <class color="green"
+                element="false"
+                id="UpdateCheckRequest"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="UpdateServiceConfig"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="UpdatesControllerTest"
+                value="NaN">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="UpdateAvailableEvent"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DefaultUpdateServiceTest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="NoUpdateAvailable"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="UpdateAvailableEventTest"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="UpdatesController"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DefaultUpdateService"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.support.validation">
+         <class color="green"
+                element="false"
+                id="AlwaysInvalidStringTest"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="BlankStringDecoratorTest"
+                value="NaN">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ContainedIntegerValidator"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ContainedIntegerValidatorTest"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DirectoryValidatorTest"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="FileTypeValidator"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PositiveIntegerValidator"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PositiveIntRangeStringValidator"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="FileValidatorTest"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="RegexValidator" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="NonBlankStringValidatorTest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="RegexValidatorTest"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="IntRangeStringValidatorTest"
+                value="NaN">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PositiveIntegerStringValidator"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="ValidatorsTest" value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="FileTypeValidatorTest"
+                value="NaN">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="IntegerStringValidatorTest"
+                value="NaN">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="FileValidator" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="Validators" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.ui.support">
+         <class color="green"
+                element="false"
+                id="FXValidationSupportTest"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="Views" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="CircularObservableListTest"
+                value="NaN">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="CircularObservableList"
+                value="0.1905">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="FXValidationSupport" value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.ui.banner">
+         <class color="red" element="false" id="NewsButtonTest" value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="WorkspaceMenuTest" value="0">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="LogButton" value="0">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="MenuButton" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="WorkspaceMenu" value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="BannerPane" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="BannerButton" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="NewsButton" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="MenuConfig" value="0">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="MenuButtonTest" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="ModulesMenuTest" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="WorkspaceMenuItem"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="DashboardButton" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="DashboardButtonTest" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="SettingsMenuTest" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="BannerPaneTest$Config"
+                value="0">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">7</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="ModulesMenu" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="LogButtonTest" value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="BannerButtonTest" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="BannerPaneTest" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="BannerButtons" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="AppContextMenu" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.ui.dashboard.modules">
+         <class color="green"
+                element="false"
+                id="ModulesDashboardPane"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ModulesDashboardTile"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="ModulesDashboardTileTest"
+                value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PremiumModuleTile"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="DashboardTile" value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ModulesDashboardPaneTest"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.rotate">
+         <class color="red"
+                element="false"
+                id="RotateParametersBuilder"
+                value="0">
+            <vars>
+               <var id="k">9</var>
+               <var id="l">6</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="RotateSelectionPane"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="RotateModule$ModuleConfig"
+                value="0.025">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="RotateParametersBuilderTest"
+                value="NaN">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="RotateModule" value="0.0159">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="RotateOptionsPane"
+                value="0.0556">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="RotateOptionsPaneTest"
+                value="0">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="RotateSelectionPaneTest"
+                value="NaN">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.configuration">
+         <class color="green" element="false" id="StylesConfig" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="StylesConfigTest" value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.ui.selection.multiple.move">
+         <class color="green"
+                element="false"
+                id="SingleSelectionAndFocus"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="MoveSelectedEvent"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SingleSelectionAndFocusTest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="MultipleSelectionAndFocusTest"
+                value="NaN">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="MoveSelectedEventTest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="MultipleSelectionAndFocus"
+                value="0.0667">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="MoveTypeTest" value="NaN">
+            <vars>
+               <var id="k">16</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.ui.dialog">
+         <class color="green"
+                element="false"
+                id="CreateOutputDirectoryConfirmationDialog"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="LenientExecutionConfirmationDialogTest"
+                value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="OpenWithDialogTest" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="OverwriteDialogControllerTest$Config"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="OverwriteDialogControllerUITest"
+                value="0">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="LenientTaskExecutionDialogController"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="CreateOutputDirectoryDialogController"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="ConfirmationDialogContentTest"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="OverwriteDialogControllerUITest$Config"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="OverwriteConfirmationDialog"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="CreateOutputDirectoryDialogControllerTest$Config"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="AddSubdirectoriesConfirmationDialog"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="LenientTaskExecutionDialogControllerTest$Config"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="LenientTaskExecutionDialogControllerTest"
+                value="0">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="OverwriteConfirmationDialogTest"
+                value="0">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="LenientExecutionConfirmationDialog"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="OpenWithDialogController"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ConfirmationDialogContent"
+                value="1">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="OverwriteDialogController"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="OverwriteDialogControllerTest"
+                value="NaN">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="OpenWithDialog" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="OpenWithDialogControllerTest"
+                value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="CreateOutputDirectoryConfirmationDialogTest"
+                value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="CreateOutputDirectoryDialogControllerTest"
+                value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="ConfirmationDialog" value="0.15">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.ui.notification">
+         <class color="green"
+                element="false"
+                id="AddNotificationRequestEvent"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="AddNotificationRequestEventTest"
+                value="NaN">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="NotificationsContainerTest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="true"
+                id="NotificationsContainer"
+                value="0.6667">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="Notification" value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="RemoveNotificationRequestEventTest"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="NotificationsController"
+                value="0">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">7</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="NotificationsControllerTest"
+                value="NaN">
+            <vars>
+               <var id="k">12</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="RemoveNotificationRequestEvent"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.splitbybookmarks">
+         <class color="red"
+                element="true"
+                id="SplitByBookmarksModule"
+                value="0.0119">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="SplitOptionsPane" value="0.025">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="BookmarksLevelComboBox"
+                value="0.0089">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="SplitByBookmarksModule$ModuleConfig"
+                value="0.025">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="SplitOptionsPaneTest" value="0">
+            <vars>
+               <var id="k">9</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SplitByOutlineLevelParametersBuilderTest"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="BookmarksLevelComboBoxTest"
+                value="0">
+            <vars>
+               <var id="k">17</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="SplitByOutlineLevelParametersBuilder"
+                value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.ui.help">
+         <class color="green" element="false" id="HelpPopup" value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="HelpPopupSkin" value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="HelpUtils" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.task">
+         <class color="red" element="false" id="BulkRotateParameters" value="0">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="TaskExecutionControllerTest"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="TaskExecutionController$TaskEventBroadcaster"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PdfRotationInputTest"
+                value="NaN">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="BulkRotateParametersTest"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="TaskExecutionServiceConfig"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="TaskExecutionController"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="PdfRotationInput" value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="BulkRotateTaskTest"
+                value="NaN">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="BulkRotateTask" value="0.1667">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.support.io">
+         <class color="green" element="false" id="NetUtils" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="ObjectCollectionWriter"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ObjectCollectionWriterTest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.ui.selection">
+         <class color="green" element="false" id="ToolbarButton" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ShowPasswordFieldPopupRequestTest"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PasswordFieldPopup$PasswordFieldPopupContent"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="PasswordFieldPopup" value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="PasswordFieldPopupTest"
+                value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="LoadingStatusIndicatorUpdater"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ShowPasswordFieldPopupRequest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PasswordFieldPopupSkin"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="LoadingStatusIndicatorUpdaterTest"
+                value="NaN">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.ui.news">
+         <class color="green" element="false" id="News" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="NewsPanel" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.ui.workarea">
+         <class color="red"
+                element="true"
+                id="WorkAreaTest$Config"
+                value="0.025">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="WorkAreaTest" value="NaN">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="QuickbarModuleButtonsProviderTest"
+                value="NaN">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="ModuleButton" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="ModuleButtonTest" value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="WorkAreaTest$TestModule"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="WorkArea" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="QuickbarModuleButtonsProvider"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="QuickbarModuleButtonsPane"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="QuickbarModuleButtonsPaneTest"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.basic">
+         <class color="red" element="true" id="PdfsamBasic" value="0.0833">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="PdfsamBasicConfig" value="0">
+            <vars>
+               <var id="k">11</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="PdfsamBasicTest" value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="App" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.support">
+         <class color="green"
+                element="false"
+                id="EncryptionUtilsTest"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="KeyStringValueItemTest"
+                value="NaN">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="LocaleKeyValueItem" value="0">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="ObservableAtomicReference"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="LocaleKeyValueItemTest"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="XmlUtils" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="KeyStringValueItem" value="0">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ObservableAtomicReferenceTest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="XmlUtilsTest" value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="EncryptionUtils" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.ui.commons">
+         <class color="green"
+                element="false"
+                id="ToggleChangeListenerTest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="ShowStageRequest" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SetPageRangesRequest"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SetDestinationRequest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SetActiveModuleRequest"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SetActiveModuleRequestTest"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="RadioButtonDrivenTextFieldsPaneTest"
+                value="0">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="OpenFileRequest" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="OpenUrlRequestTest"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="OpenUrlRequest" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="HidingPaneTest" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="RadioButtonDrivenTextFieldsPane"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="HidingPane" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="HideStageRequest" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="ClosePane" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="UrlButton" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SetDestinationRequestTest"
+                value="NaN">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="ToggleChangeListener"
+                value="0.1111">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="ValidableTextFieldTest"
+                value="0">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="Animations" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ShowPdfDescriptorRequest"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="HideOnEscapeHandlerTest"
+                value="0">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="ValidableTextField"
+                value="0.0159">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="NonExistingOutputDirectoryEvent"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="ClosePaneTest" value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ValidableTextField$ErrorTooltipManager"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="UrlButtonTest" value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="HideOnEscapeHandler"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ShowPdfDescriptorRequestTest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="OpenFileRequestTest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="ClearModuleEvent" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="RemoveSelectedEvent"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.news">
+         <class color="green"
+                element="false"
+                id="HideNewsPanelRequest"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="LatestNewsEvent" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ShowNewsPanelRequest"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="NewsData" value="0.2273">
+            <vars>
+               <var id="k">12</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="FetchLatestNewsRequest"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="NewsServiceConfig"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="NewImportantNewsEvent"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="LatestNewsEventTest"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="NewImportantNewsEventTest"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="LatestNewsController" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultNewsService"
+                value="0.0667">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DefaultNewsServiceTest"
+                value="NaN">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="LatestNewsControllerTest"
+                value="NaN">
+            <vars>
+               <var id="k">9</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.pdf">
+         <class color="green"
+                element="false"
+                id="PdfLoadRequestEventTest"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="PdfLoadController" value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PdfFilesListLoadRequest"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="BaseFilesDroppedEvent"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DefaultSAMBoxLoaderTest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PdfFilesListLoadRequestTest"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PdfListParserTest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PdfDocumentDescriptorTest"
+                value="NaN">
+            <vars>
+               <var id="k">13</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="PdfLoadRequestEvent" value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="PdfServiceConfig" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="DefaultSAMBoxLoader" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="BookmarksLevelSAMBoxLoaderTest"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="PdfListParser" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PdfLoadControllerTest"
+                value="NaN">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="MultipleFilesDroppedEvent"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="BookmarksLevelSAMBoxLoader"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SingleFileDroppedEvent"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SAMBoxPdfLoadService"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SingleFileDroppedEventTest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="PdfDocumentDescriptor"
+                value="0.0022">
+            <vars>
+               <var id="k">22</var>
+               <var id="l">6</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SAMBoxPdfLoadServiceTest"
+                value="NaN">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.module">
+         <class color="green"
+                element="false"
+                id="TaskExecutionRequestEvent"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="StatefulPreferencesUsageService"
+                value="0">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="StatefulPreferencesUsageServiceTest"
+                value="NaN">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="ModuleUsageTest" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="TaskExecutionRequestEventTest"
+                value="NaN">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="ModuleDescriptorBuilder"
+                value="0.0214">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="PreferencesUsageDataStore"
+                value="0">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ModuleServiceConfig"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="StatefulPreferencesUsageServiceTest$Config"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="ModuleUsage" value="0.0238">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PreferencesUsageDataStoreTest"
+                value="NaN">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ModulePriorityTest"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ModuleKeyValueItemTest"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ClearUsageController"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ClearUsageControllerTest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ClearUsageRequestEvent"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ModuleKeyValueItem"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="ModuleDescriptor" value="0">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ModuleDescriptorBuilderTest"
+                value="NaN">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.ui.io">
+         <class color="green"
+                element="false"
+                id="RemovePdfVersionConstraintEvent"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SetLatestDirectoryEvent"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="RemovePdfVersionConstraintEventTest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SetLatestDirectoryEventTest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="RememberingLatestFileChooserWrapper"
+                value="0.0357">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="PdfDestinationPane"
+                value="0.0069">
+            <vars>
+               <var id="k">9</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="RememberingLatestDirectoryChooserWrapperTest"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="RememberingLatestDirectoryChooserWrapper"
+                value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="BrowsablePdfInputFieldTest"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="BasePdfVersionEvent"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="BrowsableOutputDirectoryField"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="BrowsableOutputDirectoryFieldTest"
+                value="NaN">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PdfVersionConstrainedCheckBox"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="BasePdfVersionEventTest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="BrowsableDirectoryField"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="BrowsablePdfInputField"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="BaseRememberingLatestChooser"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ChangedSelectedPdfVersionEvent"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="BrowsableField" value="0.0089">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="BrowsableFileField$BrowseEventHandler"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="PdfDestinationPaneUITest"
+                value="0">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PdfVersionComboTest"
+                value="NaN">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="BrowsableDirectoryField$BrowseEventHandler"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="AddPdfVersionConstraintEventTest"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="BrowsablePdfOutputFieldTest"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="AddPdfVersionConstraintEvent"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PdfVersionConstrainedCheckBoxTest$BasePdfVersionEventListener"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="PdfVersionCombo$DefaultPdfVersionComboItem"
+                value="0">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PdfDestinationPaneTest"
+                value="NaN">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="PdfVersionFilter" value="0.1667">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="DestinationPane" value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="PdfVersionCombo" value="0">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PdfVersionFilterTest"
+                value="NaN">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="PdfVersionConstrainedCheckBoxTest"
+                value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="BrowsableDirectoryFieldTest"
+                value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="BrowsableFileFieldUITest"
+                value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="BrowsableFileFieldTest"
+                value="NaN">
+            <vars>
+               <var id="k">9</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="FileChoosers" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="BrowsablePdfOutputField"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="PdfVersionCombo$SameAsSourceComboItem"
+                value="0.1667">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="BrowsableDirectoryFieldUITest"
+                value="0">
+            <vars>
+               <var id="k">9</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="BrowsableFileField" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.split">
+         <class color="green"
+                element="false"
+                id="SplitByEveryRadioButton$SplitByEveryXPagesParametersBuilder"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="SplitByEveryRadioButton"
+                value="0.0333">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SplitAfterPredefinedSetOfPagesRadioButton$SimpleSplitParametersBuilder"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="SplitAfterPredefinedSetOfPagesRadioButton"
+                value="0.0833">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="SplitAfterRadioButton"
+                value="0.0833">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="SplitModule" value="0.0159">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="SplitAfterRadioButtonTest"
+                value="0">
+            <vars>
+               <var id="k">13</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SplitAfterRadioButton$SplitByPageParametersBuilder"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="SplitByEveryRadioButtonTest"
+                value="0">
+            <vars>
+               <var id="k">11</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="SplitModule$ModuleConfig"
+                value="0.025">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="SplitAfterPredefinedSetOfPagesRadioButtonTest"
+                value="0">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="SplitOptionsPane" value="0.0333">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.premium">
+         <class color="green"
+                element="false"
+                id="PremiumModulesEventTest"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PremiumServiceConfig"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="PremiumModule" value="0.0667">
+            <vars>
+               <var id="k">10</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DefaultPremiumModulesServiceTest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DefaultPremiumModulesService"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="FetchPremiumModulesRequest"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PremiumModuleTest"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PremiumModulesController"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PremiumModulesEvent"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PremiumModulesControllerTest"
+                value="NaN">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.support.filter">
+         <class color="green"
+                element="false"
+                id="BaseFileChooserFilterTest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="FileFilterTypeTest"
+                value="NaN">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="BaseFileChooserFilter"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.merge">
+         <class color="red" element="true" id="MergeModule" value="0.0159">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="MergeParametersBuilder"
+                value="0.0111">
+            <vars>
+               <var id="k">10</var>
+               <var id="l">6</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="MergeParametersBuilderTest"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="MergeOptionsPaneTest" value="0">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="MergeOptionsPane" value="0.0556">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="MergeModule$ModuleConfig"
+                value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="MergeSelectionPane"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="MergeSelectionPaneTest"
+                value="NaN">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.ui.dnd">
+         <class color="green"
+                element="false"
+                id="MultipleFilesDropControllerTest"
+                value="NaN">
+            <vars>
+               <var id="k">10</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SingleFileDropControllerTest"
+                value="NaN">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SingleFileDropController"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="MultipleFilesDropController"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.extract">
+         <class color="red" element="true" id="ExtractModule" value="0.0159">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="ExtractModule$ModuleConfig"
+                value="0.025">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="ExtractOptionsPane"
+                value="0.0556">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ExtractSelectionPaneTest"
+                value="NaN">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="ExtractOptionsPaneTest"
+                value="0">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="ExtractParametersBuilder"
+                value="0">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ExtractSelectionPane"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ExtractParametersBuilderTest"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.context">
+         <class color="green"
+                element="false"
+                id="DefaultUserContextTest"
+                value="NaN">
+            <vars>
+               <var id="k">25</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="DefaultUserContext"
+                value="0.0026">
+            <vars>
+               <var id="k">20</var>
+               <var id="l">6</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.alternatemix">
+         <class color="green"
+                element="false"
+                id="AlternateMixSelectionPane"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="AlternateMixModule"
+                value="0.0159">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="AlternateMixModule$ModuleConfig"
+                value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="AlternateMixParametersBuilder"
+                value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="AlternateMixSelectionPaneTest"
+                value="NaN">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="AlternateMixParametersBuilderTest"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.ui">
+         <class color="green" element="false" id="ContentPaneTest" value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="PreferencesRecentWorkspacesService"
+                value="0">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="StageServiceController"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="StageModeTest" value="NaN">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PreferencesRecentWorkspacesServiceTest"
+                value="NaN">
+            <vars>
+               <var id="k">11</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SetLatestStageStatusRequestTest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SetLatestStageStatusRequest"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="StageStatus" value="0.0256">
+            <vars>
+               <var id="k">13</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="WorkspaceController" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="WorkspaceControllerTest"
+                value="NaN">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="StageStatusTest" value="NaN">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="UIServiceConfig" value="NaN">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="InputPdfArgumentsLoadRequest"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="StageServiceControllerTest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="JsonWorkspaceServiceTest"
+                value="NaN">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="InputPdfArgumentsLoadRequestTest"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="yellow"
+                element="true"
+                id="JsonWorkspaceService"
+                value="0.5">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="DefaultStageService" value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="MainPane" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="DefaultStageServiceTest"
+                value="NaN">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ContentPaneTest$Config"
+                value="NaN">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="ContentPane" value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.ui.dashboard.about">
+         <class color="green"
+                element="false"
+                id="AboutDashboardPane"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="AboutDashboardPaneTest"
+                value="0">
+            <vars>
+               <var id="k">13</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam">
+         <class color="green" element="false" id="Services" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="InputPdfArgumentsController"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="TestUtils" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="TestUtils$NotInstanceOf"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="NoHeadless" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="InputPdfArgumentsControllerTest"
+                value="NaN">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="ShutdownEvent" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="WindowStatusController"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="PdfsamApp" value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="NoWindows" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="PdfsamConfig" value="NaN">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="TestCycles" value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="WindowStatusControllerTest"
+                value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="UncaughtExceptionLogger"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="Cycles" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="OpenFileController"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.ui.selection.single">
+         <class color="green"
+                element="false"
+                id="SingleSelectionPaneToolbar"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SingleSelectionPaneToolbar$ClearButton"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="TaskParametersBuilderSingleSelectionPane"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="SingleSelectionPaneToolbar$SelectButton"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="SingleSelectionPaneToolbarTest"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="SingleSelectionPane"
+                value="0.0056">
+            <vars>
+               <var id="k">9</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="SingleSelectionPaneTest"
+                value="0">
+            <vars>
+               <var id="k">31</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.sound">
+         <class color="red" element="false" id="PlaySoundController" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PlaySoundControllerTest"
+                value="NaN">
+            <vars>
+               <var id="k">7</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.ui.quickbar">
+         <class color="red"
+                element="false"
+                id="BaseQuickbarButtonsPane"
+                value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="BaseQuickbarButtonTest"
+                value="NaN">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="ExpandButtonTest" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="BaseQuickbarButton"
+                value="0.0667">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="QuickbarPaneTest" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="QuickbarPane" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="ExpandButton" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.ui.dashboard.preference">
+         <class color="green"
+                element="false"
+                id="PreferencePaneTest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PreferenceBrowsableFileField"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PreferenceThumbnailsPane"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PreferenceWorkspacePane"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PreferenceAppearencePane"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="ClearStatisticsButtonTest"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PreferenceBehaviorPane"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="PreferenceRadioButtonTest"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="PreferenceIntTextFieldTest"
+                value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="PreferenceComboBoxTest"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PreferenceIntTextField"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="CheckForUpdatesButton"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PreferenceRadioButton"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="PreferenceCheckBoxTest"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PreferenceCheckBox"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PreferenceOutputPane"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="CheckForUpdatesButtonTest"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ClearStatisticsButton"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="PreferencePane" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PreferenceComboBox"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PreferenceSetterOnValidState"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="PreferenceOutputPaneTest"
+                value="0">
+            <vars>
+               <var id="k">4</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PreferencePaneTest$Config"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="yellow" element="true" id="PreferenceConfig" value="0.5">
+            <vars>
+               <var id="k">14</var>
+               <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="PreferenceBrowsableDirectoryFieldTest"
+                value="0">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PreferenceBrowsableDirectoryField"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="PreferenceBrowsableFileFieldTest"
+                value="0">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="PreferenceSetterOnValidStateTest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="false"
+                id="PreferenceAppearencePaneTest"
+                value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+      </package>
+      <package element="false" id="org.pdfsam.ui.module">
+         <class color="red"
+                element="false"
+                id="BaseTaskExecutionModule"
+                value="0">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">4</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="BaseTaskExecutionModule$ErrorTracker"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ModuleOwnedButton"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="ModuleOwnedButtonTest"
+                value="NaN">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="Footer" value="0">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="TaskFailedButton" value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="OpenButton$OpenWithMenuItem"
+                value="NaN">
+            <vars>
+               <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="RunButtonTest" value="NaN">
+            <vars>
+               <var id="k">5</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="OpenButtonTest$TestListener"
+                value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="TaskFailedButtonTest" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="FooterTest" value="NaN">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="RunButton" value="0">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">3</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="OpenButton" value="0">
+            <vars>
+               <var id="k">6</var>
+               <var id="l">5</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="OpenButtonTest" value="0">
+            <vars>
+               <var id="k">8</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
+      </package>
+   </app>
+   <colors high="0.6" low="0.4">[0.4000 .. 0.6000]</colors>
+   <min>0.0022</min>
+   <max>0.6667</max>
+   <bars xmlns:xs="http://www.w3.org/2001/XMLSchema"><!--count: 571, steps: 32; all: 62; min: 0.0022; max: 0.6667; delta: 0.020765625-->
+      <bar color="red" x="0">18</bar>
+      <!--step: 0, left: 0.0022, right: 0.022965625-->
+      <bar color="red" x="0.03125">13</bar>
+      <!--step: 1, left: 0.022965625, right: 0.04373125-->
+      <bar color="red" x="0.0625">4</bar>
+      <!--step: 2, left: 0.04373125, right: 0.064496875-->
+      <bar color="red" x="0.09375">11</bar>
+      <!--step: 3, left: 0.064496875, right: 0.0852625-->
+      <bar color="yellow" x="0.125">0</bar>
+      <!--step: 4, left: 0.0852625, right: 0.106028125-->
+      <bar color="red" x="0.15625">1</bar>
+      <!--step: 5, left: 0.106028125, right: 0.12679374-->
+      <bar color="yellow" x="0.1875">0</bar>
+      <!--step: 6, left: 0.12679374, right: 0.14755937-->
+      <bar color="red" x="0.21875">6</bar>
+      <!--step: 7, left: 0.14755937, right: 0.168325-->
+      <bar color="yellow" x="0.25">0</bar>
+      <!--step: 8, left: 0.168325, right: 0.18909064-->
+      <bar color="red" x="0.28125">1</bar>
+      <!--step: 9, left: 0.18909064, right: 0.20985624-->
+      <bar color="red" x="0.3125">1</bar>
+      <!--step: 10, left: 0.20985624, right: 0.23062187-->
+      <bar color="yellow" x="0.34375">0</bar>
+      <!--step: 11, left: 0.23062187, right: 0.2513875-->
+      <bar color="yellow" x="0.375">0</bar>
+      <!--step: 12, left: 0.2513875, right: 0.27215314-->
+      <bar color="yellow" x="0.40625">0</bar>
+      <!--step: 13, left: 0.27215314, right: 0.29291874-->
+      <bar color="yellow" x="0.4375">0</bar>
+      <!--step: 14, left: 0.29291874, right: 0.31368437-->
+      <bar color="red" x="0.46875">4</bar>
+      <!--step: 15, left: 0.31368437, right: 0.33445-->
+      <bar color="yellow" x="0.5">0</bar>
+      <!--step: 16, left: 0.33445, right: 0.35521564-->
+      <bar color="yellow" x="0.53125">0</bar>
+      <!--step: 17, left: 0.35521564, right: 0.37598127-->
+      <bar color="yellow" x="0.5625">0</bar>
+      <!--step: 18, left: 0.37598127, right: 0.39674687-->
+      <bar color="yellow" x="0.59375">0</bar>
+      <!--step: 19, left: 0.39674687, right: 0.4175125-->
+      <bar color="yellow" x="0.625">0</bar>
+      <!--step: 20, left: 0.4175125, right: 0.43827814-->
+      <bar color="yellow" x="0.65625">0</bar>
+      <!--step: 21, left: 0.43827814, right: 0.45904374-->
+      <bar color="yellow" x="0.6875">0</bar>
+      <!--step: 22, left: 0.45904374, right: 0.47980937-->
+      <bar color="yellow" x="0.71875">2</bar>
+      <!--step: 23, left: 0.47980937, right: 0.500575-->
+      <bar color="yellow" x="0.75">0</bar>
+      <!--step: 24, left: 0.500575, right: 0.5213406-->
+      <bar color="yellow" x="0.78125">0</bar>
+      <!--step: 25, left: 0.5213406, right: 0.5421063-->
+      <bar color="yellow" x="0.8125">0</bar>
+      <!--step: 26, left: 0.5421063, right: 0.5628719-->
+      <bar color="yellow" x="0.84375">0</bar>
+      <!--step: 27, left: 0.5628719, right: 0.5836375-->
+      <bar color="yellow" x="0.875">0</bar>
+      <!--step: 28, left: 0.5836375, right: 0.60440314-->
+      <bar color="yellow" x="0.90625">0</bar>
+      <!--step: 29, left: 0.60440314, right: 0.62516874-->
+      <bar color="yellow" x="0.9375">0</bar>
+      <!--step: 30, left: 0.62516874, right: 0.6459344-->
+      <bar color="green" x="0.96875">1</bar>
+      <!--step: 31, left: 0.6459344, right: 0.6667-->
+   </bars>
+   <statistics>
+      <total>571</total>
+      <elements>62</elements>
+      <mean>0.09804516129032258</mean>
+      <sigma>0.1352156410085796</sigma>
+      <variance>0.018283269573361075</variance>
+      <defects>0.11290322580645161</defects>
+   </statistics>
+</metric>
