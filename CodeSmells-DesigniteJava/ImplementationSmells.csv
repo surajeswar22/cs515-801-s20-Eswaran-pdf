@@ -1,0 +1,938 @@
+Project Name,Package Name,Type Name,Method Name,Implementation Smell,Cause of the Smell
+.,org.pdfsam.alternatemix,AlternateMixModule,settingPanel,Long Statement,The length of the statement "pane.getChildren().addAll(selectionPane`Views.titledPane(DefaultI18nContext.getInstance().i18n("Destination file")`destinationPane));" is 133.
+.,org.pdfsam.alternatemix,AlternateMixSelectionPane,AlternateMixSelectionPane,Long Statement,The length of the statement "super(ownerModule`true`true`new TableColumnProvider<?>[]{new LoadingColumn(ownerModule)`FileColumn.NAME`LongColumn.SIZE`IntColumn.PAGES`LongColumn.LAST_MODIFIED`new PageRangesColumn(DefaultI18nContext.getInstance().i18n("Double click to set pages you want to mix (ex: 2 or 5-23 or 2`5-7`12-)"))`new PaceColumn()`new ReverseColumn()});" is 334.
+.,org.pdfsam.alternatemix,AlternateMixParametersBuilderTest,build,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.alternatemix,AlternateMixParametersBuilderTest,build,Magic Number,The method contains a magic number: 4
+.,org.pdfsam.alternatemix,AlternateMixParametersBuilderTest,build,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.alternatemix,AlternateMixParametersBuilderTest,build,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.alternatemix,AlternateMixParametersBuilderTest,build,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.alternatemix,AlternateMixParametersBuilderTest,build,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.alternatemix,AlternateMixParametersBuilderTest,build,Magic Number,The method contains a magic number: 4
+.,org.pdfsam.alternatemix,AlternateMixParametersBuilderTest,build,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.alternatemix,AlternateMixSelectionPaneTest,validInput,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.alternatemix,AlternateMixSelectionPaneTest,validInput,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.alternatemix,AlternateMixSelectionPaneTest,validInput,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.alternatemix,AlternateMixSelectionPaneTest,validInput,Magic Number,The method contains a magic number: 4
+.,org.pdfsam.alternatemix,AlternateMixSelectionPaneTest,validInput,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.alternatemix,AlternateMixSelectionPaneTest,validInput,Magic Number,The method contains a magic number: 8
+.,org.pdfsam,InputPdfArgumentsController,accept,Long Statement,The length of the statement "pdfs.stream().filter(s -> !s.startsWith("-")).filter(FileType.PDF::matches).map(Paths::get).filter(Files::isReadable).forEach(event.pdfs::add);" is 143.
+.,org.pdfsam,PdfsamApp,verboseIfRequired,Complex Conditional,The conditional expression rawParameters.contains("--verbose") || rawParameters.contains("-verbose") || rawParameters.contains("-v") is complex.
+.,org.pdfsam,PdfsamApp,start,Long Statement,The length of the statement "LOG.info(DefaultI18nContext.getInstance().i18n("Started in {0}"`DurationFormatUtils.formatDurationWords(STOPWATCH.getTime()`true`true)));" is 137.
+.,org.pdfsam,PdfsamApp,initScene,Long Statement,The length of the statement "mainScene.getAccelerators().put(new KeyCodeCombination(KeyCode.L`KeyCombination.SHORTCUT_DOWN)`() -> eventStudio().broadcast(ShowStageRequest.INSTANCE`"LogStage"));" is 164.
+.,org.pdfsam,PdfsamApp,stop,Long Statement,The length of the statement "StageStatus status=new StageStatus(this.primaryStage.getX()`this.primaryStage.getY()`this.primaryStage.getWidth()`this.primaryStage.getHeight());" is 145.
+.,org.pdfsam,PdfsamApp,loadWorkspaceIfRequired,Long Statement,The length of the statement "String workspace=ofNullable(getParameters().getNamed().get("workspace")).filter(StringUtils::isNotBlank).orElseGet(userContext::getDefaultWorkspacePath);" is 153.
+.,org.pdfsam,PdfsamApp,getOpenCmd,Complex Conditional,The conditional expression os.indexOf("nix") >= 0 || os.indexOf("nux") >= 0 || os.indexOf("aix") > 0 is complex.
+.,org.pdfsam,WindowStatusController,initUi,Complex Conditional,The conditional expression !Boolean.getBoolean(PDFSAM_DISABLE_UI_RESTORE) && !StageStatus.NULL.equals(latestStatus) && hasAvailableScreen(latestStatus) is complex.
+.,org.pdfsam,WindowStatusController,initUi,Long Statement,The length of the statement "if (!Boolean.getBoolean(PDFSAM_DISABLE_UI_RESTORE) && !StageStatus.NULL.equals(latestStatus) && hasAvailableScreen(latestStatus)) {" is 131.
+.,org.pdfsam,WindowStatusController,defaultStageStatus,Magic Number,The method contains a magic number: 2
+.,org.pdfsam,WindowStatusController,defaultStageStatus,Magic Number,The method contains a magic number: 4
+.,org.pdfsam,InputPdfArgumentsControllerTest,onPdf,Long Statement,The length of the statement "new InputPdfArgumentsController().accept(Arrays.asList(folder.newFile("some.pdf").getAbsolutePath()`folder.newFile("some_other.pdf").getAbsolutePath()));" is 153.
+.,org.pdfsam,InputPdfArgumentsControllerTest,onPdf,Magic Number,The method contains a magic number: 2
+.,org.pdfsam,WindowStatusControllerTest,defaultOnNullStatus,Magic Number,The method contains a magic number: 200
+.,org.pdfsam,WindowStatusControllerTest,defaultOnDisableRestore,Magic Number,The method contains a magic number: 10
+.,org.pdfsam,WindowStatusControllerTest,defaultOnDisableRestore,Magic Number,The method contains a magic number: 10
+.,org.pdfsam,WindowStatusControllerTest,defaultOnDisableRestore,Magic Number,The method contains a magic number: 10
+.,org.pdfsam,WindowStatusControllerTest,defaultOnDisableRestore,Magic Number,The method contains a magic number: 10
+.,org.pdfsam,WindowStatusControllerTest,defaultOnDisableRestore,Magic Number,The method contains a magic number: 200
+.,org.pdfsam,Services,initServices,Long Statement,The length of the statement "Injector.addConfig(new UpdateServiceConfig()`new UIServiceConfig()`new TaskExecutionServiceConfig()`new PdfServiceConfig()`new NewsServiceConfig()`new ModuleServiceConfig()`new PremiumServiceConfig());" is 201.
+.,org.pdfsam.basic,App,main,Long Statement,The length of the statement "Injector.addConfig(new PdfsamBasicConfig()`new org.pdfsam.alternatemix.AlternateMixModule.ModuleConfig()`new org.pdfsam.extract.ExtractModule.ModuleConfig()`new org.pdfsam.merge.MergeModule.ModuleConfig()`new org.pdfsam.rotate.RotateModule.ModuleConfig()`new org.pdfsam.split.SplitModule.ModuleConfig()`new org.pdfsam.splitbybookmarks.SplitByBookmarksModule.ModuleConfig()`new org.pdfsam.splitbysize.SplitBySizeModule.ModuleConfig());" is 434.
+.,org.pdfsam.basic,PdfsamBasicConfig,updatesUrl,Long Statement,The length of the statement "return new URL(String.format("http://www.pdfsam.org/current-version?c=%s"`pdfsam.property(ConfigurableProperty.VERSION)));" is 122.
+.,org.pdfsam.context,DefaultUserContext,isPlaySounds,Long Statement,The length of the statement "return prefs.getBoolean(BooleanUserPreference.PLAY_SOUNDS.toString()`Boolean.valueOf(System.getProperty(PLAY_SOUNDS_PROP`Boolean.TRUE.toString())));" is 148.
+.,org.pdfsam.context,DefaultUserContext,isDonationNotification,Long Statement,The length of the statement "return prefs.getBoolean(BooleanUserPreference.DONATION_NOTIFICATION.toString()`Boolean.valueOf(System.getProperty(DONATE_NOTIFICATION_PROP`Boolean.TRUE.toString())));" is 166.
+.,org.pdfsam.context,DefaultUserContext,isFetchPremiumModules,Long Statement,The length of the statement "return prefs.getBoolean(BooleanUserPreference.PREMIUM_MODULES.toString()`Boolean.valueOf(System.getProperty(FETCH_PREMIUM_MODULES_PROP`Boolean.TRUE.toString())));" is 162.
+.,org.pdfsam.context,DefaultUserContext,getNumberOfLogRows,Magic Number,The method contains a magic number: 200
+.,org.pdfsam.context,DefaultUserContext,isCheckForUpdates,Long Statement,The length of the statement "return prefs.getBoolean(BooleanUserPreference.CHECK_UPDATES.toString()`Boolean.valueOf(System.getProperty(CHECK_FOR_UPDATES_PROP`Boolean.TRUE.toString())));" is 156.
+.,org.pdfsam.context,DefaultUserContext,isCheckForNews,Long Statement,The length of the statement "return prefs.getBoolean(BooleanUserPreference.CHECK_FOR_NEWS.toString()`Boolean.valueOf(System.getProperty(CHECK_FOR_NEWS_PROP`Boolean.TRUE.toString())));" is 154.
+.,org.pdfsam.context,DefaultUserContextTest,getNumberOfLogRows,Magic Number,The method contains a magic number: 200
+.,org.pdfsam.context,DefaultUserContextTest,getNumberOfLogRows,Magic Number,The method contains a magic number: 20
+.,org.pdfsam.context,DefaultUserContextTest,getNumberOfLogRows,Magic Number,The method contains a magic number: 20
+.,org.pdfsam.module,ModuleDescriptor,ModuleDescriptor,Long Parameter List,The method has 6 parameters. 
+.,org.pdfsam.module,ModuleDescriptor,ModuleDescriptor,Long Statement,The length of the statement "this.inputTypes=ofNullable(inputTypes).filter(t -> t.length > 0).map(Arrays::asList).orElseGet(() -> Arrays.asList(ModuleInputOutputType.OTHER));" is 145.
+.,org.pdfsam.module,ModuleDescriptorBuilderTest,buildNullName,Long Statement,The length of the statement "builder().category(ModuleCategory.MERGE).description("desc").name(null).priority(ModulePriority.DEFAULT).supportURL("url").build();" is 131.
+.,org.pdfsam.module,ModuleDescriptorBuilderTest,buildNullDesctription,Long Statement,The length of the statement "builder().category(ModuleCategory.MERGE).description(null).name("name").priority(ModulePriority.DEFAULT).supportURL("url").build();" is 131.
+.,org.pdfsam.module,ModuleDescriptorBuilderTest,buildBlankName,Long Statement,The length of the statement "builder().category(ModuleCategory.MERGE).description("desc").name("").priority(ModulePriority.DEFAULT).supportURL("url").build();" is 129.
+.,org.pdfsam.module,ModuleDescriptorBuilderTest,buildBlankDesctription,Long Statement,The length of the statement "builder().category(ModuleCategory.MERGE).description("").name("name").priority(ModulePriority.DEFAULT).supportURL("url").build();" is 129.
+.,org.pdfsam.module,ModuleDescriptorBuilderTest,build,Long Statement,The length of the statement "ModuleDescriptor victim=builder().category(ModuleCategory.MERGE).description("desc").name("name").priority(ModulePriority.DEFAULT).supportURL("url").build();" is 157.
+.,org.pdfsam.module,PreferencesUsageDataStore,getUsages,Long Statement,The length of the statement "List<String> jsons=Arrays.stream(prefs.childrenNames()).parallel().map(name -> prefs.node(name)).map(node -> node.get(MODULE_USAGE_KEY`"")).filter(json -> isNotBlank(json)).collect(toList());" is 191.
+.,org.pdfsam.module,ModuleUsageTest,lastSeenIsUpdated,Magic Number,The method contains a magic number: 100
+.,org.pdfsam.module,PreferencesUsageDataStoreTest,incrementUsageFor,Long Statement,The length of the statement "ModuleUsage usage=JSON.std.beanFrom(ModuleUsage.class`Preferences.userRoot().node(PreferencesUsageDataStore.USAGE_PATH).node("moduleId").get(PreferencesUsageDataStore.MODULE_USAGE_KEY`""));" is 189.
+.,org.pdfsam.module,PreferencesUsageDataStoreTest,multipleIncrementUsageFor,Long Statement,The length of the statement "ModuleUsage usage=JSON.std.beanFrom(ModuleUsage.class`Preferences.userRoot().node(PreferencesUsageDataStore.USAGE_PATH).node("moduleId").get(PreferencesUsageDataStore.MODULE_USAGE_KEY`""));" is 189.
+.,org.pdfsam.module,PreferencesUsageDataStoreTest,multipleIncrementUsageFor,Long Statement,The length of the statement "ModuleUsage usage2=JSON.std.beanFrom(ModuleUsage.class`Preferences.userRoot().node(PreferencesUsageDataStore.USAGE_PATH).node("moduleId").get(PreferencesUsageDataStore.MODULE_USAGE_KEY`""));" is 190.
+.,org.pdfsam.module,PreferencesUsageDataStoreTest,multipleIncrementUsageFor,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.module,PreferencesUsageDataStoreTest,multipleIncrementUsageFor,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.module,PreferencesUsageDataStoreTest,testClear,Long Statement,The length of the statement "assertTrue(isBlank(Preferences.userRoot().node(PreferencesUsageDataStore.USAGE_PATH).node("moduleId").get(PreferencesUsageDataStore.MODULE_USAGE_KEY`"")));" is 155.
+.,org.pdfsam.module,PreferencesUsageDataStoreTest,multipleClear,Long Statement,The length of the statement "assertTrue(isBlank(Preferences.userRoot().node(PreferencesUsageDataStore.USAGE_PATH).node("moduleId").get(PreferencesUsageDataStore.MODULE_USAGE_KEY`"")));" is 155.
+.,org.pdfsam.module,PreferencesUsageDataStoreTest,getUsages,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.module,PreferencesUsageDataStoreTest,getTotalUsages,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.module,StatefulPreferencesUsageServiceTest,module1,Long Statement,The length of the statement "ModuleDescriptor descriptor=builder().name("module1").description("desc").category(ModuleCategory.SPLIT).priority(ModulePriority.DEFAULT).build();" is 146.
+.,org.pdfsam.module,StatefulPreferencesUsageServiceTest,module2,Long Statement,The length of the statement "ModuleDescriptor descriptor=builder().name("module2").description("desc").category(ModuleCategory.MERGE).priority(ModulePriority.HIGH).build();" is 143.
+.,org.pdfsam.module,StatefulPreferencesUsageServiceTest,getMostUsed,Long Statement,The length of the statement "List<ModuleUsage> usages=Arrays.asList(new ModuleUsage[]{fistUsage("IDontExist")`fistUsage("module1")`fistUsage("module2").inc()});" is 131.
+.,org.pdfsam.module,StatefulPreferencesUsageServiceTest,getMostUsed,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.module,StatefulPreferencesUsageServiceTest,getMostRecentlyUsed,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.module,StatefulPreferencesUsageServiceTest,getMostRecentlyUsed,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.module,StatefulPreferencesUsageServiceTest,getMostRecentlyUsed,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.module,Config,module1,Long Statement,The length of the statement "ModuleDescriptor descriptor=builder().name("module1").description("desc").category(ModuleCategory.SPLIT).priority(ModulePriority.DEFAULT).build();" is 146.
+.,org.pdfsam.module,Config,module2,Long Statement,The length of the statement "ModuleDescriptor descriptor=builder().name("module2").description("desc").category(ModuleCategory.MERGE).priority(ModulePriority.HIGH).build();" is 143.
+.,org.pdfsam.news,DefaultNewsService,getLatestNews,Long Statement,The length of the statement "return JSON.std.with(Feature.READ_ONLY`true).listOfFrom(NewsData.class`urlToStream(new URL(pdfsam.property(ConfigurableProperty.NEWS_URL))));" is 141.
+.,org.pdfsam.news,LatestNewsController,fetchLatestNews,Long Statement,The length of the statement "news.stream().filter(n -> n.isImportant()).findFirst().filter(n -> service.getLatestImportantNewsSeen() < n.getId()).ifPresent(n -> {" is 133.
+.,org.pdfsam.news,DefaultNewsServiceTest,testSetLatestNewsSeen,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.news,DefaultNewsServiceTest,testSetLatestNewsSeen,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.news,DefaultNewsServiceTest,testSetLatestImportantNewsSeen,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.news,DefaultNewsServiceTest,testSetLatestImportantNewsSeen,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.news,DefaultNewsServiceTest,testClear,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.news,DefaultNewsServiceTest,testClear,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.news,DefaultNewsServiceTest,testGetLatestNews,Magic Number,The method contains a magic number: 21
+.,org.pdfsam.news,LatestNewsControllerTest,fetchLatestNews,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.news,LatestNewsControllerTest,fetchLatestNews,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.news,LatestNewsControllerTest,fetchLatestNews,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.news,LatestNewsControllerTest,fetchLatestNewsWithImportant,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.news,LatestNewsControllerTest,fetchLatestNewsWithImportant,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.news,LatestNewsControllerTest,fetchLatestNewsWithImportant,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.news,LatestNewsControllerTest,fetchLatestNewsWithImportant,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.news,LatestNewsControllerTest,fetchLatestNewsWithImportant,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.news,LatestNewsControllerTest,fetchLatestNewsWithImportantButSeen,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.news,LatestNewsControllerTest,fetchLatestNewsWithImportantButSeen,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.news,LatestNewsControllerTest,fetchLatestNewsWithImportantButSeen,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.news,LatestNewsControllerTest,fetchLatestNewsWithImportantButSeen,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.news,LatestNewsControllerTest,emptyFetchNews,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.news,LatestNewsControllerTest,emptyFetchNews,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.news,LatestNewsControllerTest,nullFetchNews,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.news,LatestNewsControllerTest,nullFetchNews,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.news,LatestNewsControllerTest,failingFetchNews,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.news,LatestNewsControllerTest,failingFetchNews,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.news,LatestNewsControllerTest,onShowNewsPanel,Magic Number,The method contains a magic number: 4
+.,org.pdfsam.news,LatestNewsControllerTest,onShowNewsPanel,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.news,LatestNewsControllerTest,onShowNewsPanel,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.pdf,PdfDocumentDescriptor,toPdfFileSource,Long Statement,The length of the statement "throw new ConversionException(DefaultI18nContext.getInstance().i18n("File \"{0}\" does not exist or is invalid"`file.getName())`e);" is 131.
+.,org.pdfsam.pdf,DefaultSAMBoxLoader,accept,Long Statement,The length of the statement "Optional.ofNullable(info.getCreationDate()).map(FORMATTER::format).ifPresent(c -> descriptor.putInformation("FormattedCreationDate"`c));" is 136.
+.,org.pdfsam.pdf,PdfListParser,apply,Long Statement,The length of the statement ").filter(s -> s.toUpperCase().endsWith("PDF")).map(Paths::get).filter(Files::exists).filter(not(Files::isDirectory)).map(Path::toFile).collect(toList());" is 153.
+.,org.pdfsam.pdf,PdfLoadController,request,Long Statement,The length of the statement "new PdfListParser().apply(event.list).stream().map(PdfDocumentDescriptor::newDescriptorNoPassword).forEach(loadEvent::add);" is 123.
+.,org.pdfsam.pdf,PdfLoadController,request,Long Statement,The length of the statement "LOG.error(DefaultI18nContext.getInstance().i18n("Unable to find any valid PDF file in the list: {0}"`event.list.toString()));" is 125.
+.,org.pdfsam.pdf,SAMBoxPdfLoadService,load,Long Statement,The length of the statement "BiConsumer<PDDocument`PdfDocumentDescriptor> consumer=Arrays.stream(requires).map(consumers::get).reduce(STARTER`(r`d) -> r.andThen(d)).andThen(FINISHER);" is 154.
+.,org.pdfsam.pdf,SAMBoxPdfLoadService,load,Long Statement,The length of the statement "try (PDDocument document=PDFParser.parse(new BufferedSeekableSource(new FileChannelSeekableSource(current.getFile()))`current.getPassword())){" is 142.
+.,org.pdfsam.pdf,BookmarksLevelSAMBoxLoaderTest,setUp,Long Statement,The length of the statement "document=PDFParser.parse(SeekableSources.inMemorySeekableSourceFrom(getClass().getResourceAsStream("/test_outline.pdf")));" is 122.
+.,org.pdfsam.pdf,BookmarksLevelSAMBoxLoaderTest,accept,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.pdf,BookmarksLevelSAMBoxLoaderTest,accept,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.pdf,DefaultSAMBoxLoaderTest,setUp,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.pdf,DefaultSAMBoxLoaderTest,accept,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.pdf,PdfListParserTest,apply,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.pdf,PdfLoadControllerTest,request,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.pdf,PdfLoadControllerTest,emptyList,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.pdf,PdfLoadControllerTest,validList,Magic Number,The method contains a magic number: 60000
+.,org.pdfsam.pdf,SAMBoxPdfLoadServiceTest,load,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.pdf,SAMBoxPdfLoadServiceTest,load,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.pdf,SAMBoxPdfLoadServiceTest,invalidPdf,Long Statement,The length of the statement "waitOrTimeout(() -> PdfDescriptorLoadingStatus.WITH_ERRORS == descriptor.loadingStatus().getValue()`timeout(seconds(2)));" is 121.
+.,org.pdfsam.pdf,SAMBoxPdfLoadServiceTest,invalidPdf,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.pdf,SAMBoxPdfLoadServiceTest,encNoPwd,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.pdf,SAMBoxPdfLoadServiceTest,encWithPwd,Long Statement,The length of the statement "waitOrTimeout(() -> PdfDescriptorLoadingStatus.LOADED_WITH_USER_PWD_DECRYPTION == descriptor.loadingStatus().getValue()`timeout(seconds(2)));" is 141.
+.,org.pdfsam.pdf,SAMBoxPdfLoadServiceTest,encWithPwd,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.pdf,SAMBoxPdfLoadServiceTest,invalidate,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.premium,DefaultPremiumModulesService,getPremiumModules,Long Statement,The length of the statement "return JSON.std.with(Feature.READ_ONLY`true).listOfFrom(PremiumModule.class`urlToStream(new URL(pdfsam.property(ConfigurableProperty.PREMIUM_MODULES_URL))));" is 157.
+.,org.pdfsam.premium,PremiumModulesControllerTest,fetchPremiumModules,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.premium,PremiumModulesControllerTest,fetchPremiumModules,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.premium,PremiumModulesControllerTest,emptyFetchNews,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.premium,PremiumModulesControllerTest,emptyFetchNews,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.premium,PremiumModulesControllerTest,nullFetchNews,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.premium,PremiumModulesControllerTest,nullFetchNews,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.premium,PremiumModulesControllerTest,failingFetchNews,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.premium,PremiumModulesControllerTest,failingFetchNews,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.support,EncryptionUtils,encrypt,Magic Number,The method contains a magic number: 16
+.,org.pdfsam.support,EncryptionUtils,decrypt,Magic Number,The method contains a magic number: 16
+.,org.pdfsam.support.io,NetUtils,urlToStream,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.support.io,NetUtils,urlToStream,Magic Number,The method contains a magic number: 15000
+.,org.pdfsam.support.io,NetUtils,urlToStream,Magic Number,The method contains a magic number: 15000
+.,org.pdfsam.support.params,ConversionUtils,toPageRange,Long Statement,The length of the statement "throw new ConversionException(DefaultI18nContext.getInstance().i18n("Ambiguous page range definition: {0}. Use following formats: [n] or [n1-n2] or [-n] or [n-]"`value));" is 170.
+.,org.pdfsam.support.params,ConversionUtils,toPageRange,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.support.params,ConversionUtilsTest,singlePage,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.support.params,ConversionUtilsTest,singlePage,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.support.params,ConversionUtilsTest,rangePage,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.support.params,ConversionUtilsTest,rangePage,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.support.params,ConversionUtilsTest,endPage,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.support.params,ConversionUtilsTest,startPage,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.support.params,ConversionUtilsTest,multiple,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.support.params,ConversionUtilsTest,multiple,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.support.params,ConversionUtilsTest,multiple,Magic Number,The method contains a magic number: 4
+.,org.pdfsam.support.validation,PositiveIntRangeStringValidator,PositiveIntRangeStringValidator,Long Statement,The length of the statement "requireArg(lower > 0 && upper > 0`"Lower and upper limit cannot be negative numbers` lower=" + lower + " upper="+ upper);" is 121.
+.,org.pdfsam.support.validation,IntRangeStringValidatorTest,invalidLower,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.task,BulkRotateParameters,equals,Long Statement,The length of the statement "return new EqualsBuilder().appendSuper(super.equals(other)).append(outputPrefix`params.outputPrefix).append(output`params.output).append(inputSet`params.inputSet).isEquals();" is 174.
+.,org.pdfsam.task,PdfRotationInput,PdfRotationInput,Long Statement,The length of the statement "this.pageSelection.addAll(ofNullable(pages).filter(p -> p.length > 0).map(Arrays::asList).orElseGet(() -> Arrays.asList(PredefinedSetOfPages.ALL_PAGES)));" is 154.
+.,org.pdfsam.task,PdfRotationInput,toString,Long Statement,The length of the statement "return new ToStringBuilder(this).append("source"`source).append("pageSelection"`pageSelection).append("rotation"`rotation).toString();" is 134.
+.,org.pdfsam.task,PdfRotationInput,equals,Long Statement,The length of the statement "return new EqualsBuilder().append(source`input.source).append(rotation`input.rotation).append(pageSelection`input.pageSelection).isEquals();" is 140.
+.,org.pdfsam.task,PdfRotationInputTest,nullPagesAllPages,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.task,PdfRotationInputTest,nullPagesAllPages,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.task,PdfRotationInputTest,nullPagesAllPages,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.task,PdfRotationInputTest,nullPagesAllPages,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.task,PdfRotationInputTest,emptyPagesAllPages,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.task,PdfRotationInputTest,emptyPagesAllPages,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.task,PdfRotationInputTest,emptyPagesAllPages,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.task,PdfRotationInputTest,emptyPagesAllPages,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.task,PdfRotationInputTest,predefinedPageSet,Long Statement,The length of the statement "PdfRotationInput victim=new PdfRotationInput(mock(PdfSource.class)`Rotation.DEGREES_180`PredefinedSetOfPages.EVEN_PAGES);" is 121.
+.,org.pdfsam.task,PdfRotationInputTest,predefinedPageSet,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.task,PdfRotationInputTest,predefinedPageSet,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.task,PdfRotationInputTest,multiplePageRanges,Long Statement,The length of the statement "PdfRotationInput victim=new PdfRotationInput(mock(PdfSource.class)`Rotation.DEGREES_180`new PageRange[]{new PageRange(2`3)`new PageRange(5`5)});" is 144.
+.,org.pdfsam.task,PdfRotationInputTest,multiplePageRanges,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.task,PdfRotationInputTest,multiplePageRanges,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.task,PdfRotationInputTest,multiplePageRanges,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.task,PdfRotationInputTest,multiplePageRanges,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.task,PdfRotationInputTest,multiplePageRanges,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.task,PdfRotationInputTest,multiplePageRanges,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.task,PdfRotationInputTest,multiplePageRanges,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.task,PdfRotationInputTest,multiplePageRanges,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.task,PdfRotationInputTest,multiplePageRanges,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.task,BulkRotateTask,execute,Long Statement,The length of the statement "String outName=nameGenerator(parameters.getOutputPrefix()).generate(nameRequest().originalName(input.source.getName()).fileNumber(currentStep));" is 144.
+.,org.pdfsam.task,TaskExecutionController,TaskExecutionController,Long Statement,The length of the statement "GlobalNotificationContext.getContext().addListener(TaskExecutionFailedEvent.class`new TaskEventBroadcaster<TaskExecutionFailedEvent>());" is 136.
+.,org.pdfsam.task,TaskExecutionController,TaskExecutionController,Long Statement,The length of the statement "GlobalNotificationContext.getContext().addListener(TaskExecutionStartedEvent.class`new TaskEventBroadcaster<TaskExecutionStartedEvent>());" is 138.
+.,org.pdfsam.task,TaskExecutionController,TaskExecutionController,Long Statement,The length of the statement "GlobalNotificationContext.getContext().addListener(TaskExecutionCompletedEvent.class`new TaskEventBroadcaster<TaskExecutionCompletedEvent>());" is 142.
+.,org.pdfsam.task,TaskExecutionController,TaskExecutionController,Long Statement,The length of the statement "GlobalNotificationContext.getContext().addListener(PercentageOfWorkDoneChangedEvent.class`new TaskEventBroadcaster<PercentageOfWorkDoneChangedEvent>());" is 152.
+.,org.pdfsam.task,BulkRotateTaskTest,setUpRotateSpecificPages,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.task,BulkRotateTaskTest,setUpRotateSpecificPages,Magic Number,The method contains a magic number: 4
+.,org.pdfsam.task,BulkRotateTaskTest,setUpRotateMultipleInput,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.task,BulkRotateTaskTest,setUpRotateMultipleInput,Magic Number,The method contains a magic number: 4
+.,org.pdfsam.task,BulkRotateTaskTest,setUpRotateMultipleInput,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.task,BulkRotateTaskTest,setUpRotateMultipleInput,Magic Number,The method contains a magic number: 4
+.,org.pdfsam.task,BulkRotateTaskTest,setUpRotateMultipleInput,Magic Number,The method contains a magic number: 15
+.,org.pdfsam.task,BulkRotateTaskTest,setUpRotateMultipleInput,Magic Number,The method contains a magic number: 15
+.,org.pdfsam.task,BulkRotateTaskTest,testExecute,Long Statement,The length of the statement "testContext.assertCreator().assertPages(4).forEachPdfOutput(d -> d.getPages().forEach(p -> assertEquals(180`p.getRotation())));" is 127.
+.,org.pdfsam.task,BulkRotateTaskTest,testExecute,Magic Number,The method contains a magic number: 4
+.,org.pdfsam.task,BulkRotateTaskTest,testExecute,Magic Number,The method contains a magic number: 180
+.,org.pdfsam.task,BulkRotateTaskTest,testRotateSpecificPages,Magic Number,The method contains a magic number: 4
+.,org.pdfsam.task,BulkRotateTaskTest,testRotateSpecificPages,Magic Number,The method contains a magic number: 90
+.,org.pdfsam.task,BulkRotateTaskTest,testRotateSpecificPages,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.task,BulkRotateTaskTest,testExecuteEncrypted,Long Statement,The length of the statement "testContext.assertCreator().assertPages(4).forEachPdfOutput(d -> d.getPages().forEach(p -> assertEquals(180`p.getRotation())));" is 127.
+.,org.pdfsam.task,BulkRotateTaskTest,testExecuteEncrypted,Magic Number,The method contains a magic number: 4
+.,org.pdfsam.task,BulkRotateTaskTest,testExecuteEncrypted,Magic Number,The method contains a magic number: 180
+.,org.pdfsam.task,BulkRotateTaskTest,testVersionPrefixAndCreatorAreApplied,Magic Number,The method contains a magic number: 4
+.,org.pdfsam.task,BulkRotateTaskTest,testMultipleInputOneDoesntContainRange,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.task,BulkRotateTaskTest,testMultipleInputOneDoesntContainRange,Magic Number,The method contains a magic number: 90
+.,org.pdfsam.task,BulkRotateTaskTest,testMultipleInputOneDoesntContainRange,Magic Number,The method contains a magic number: 90
+.,org.pdfsam.task,BulkRotateTaskTest,testMultipleInputOneDoesntContainRange,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.task,BulkRotateTaskTest,testMultipleInputOneDoesntContainRange,Magic Number,The method contains a magic number: 90
+.,org.pdfsam.task,BulkRotateTaskTest,testMultipleInputOneDoesntContainRange,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.task,TaskExecutionControllerTest,request,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.task,TaskExecutionControllerTest,onEventTaskEventBroadcaster,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.task,TaskExecutionControllerTest,onEventTaskEventBroadcaster,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.ui,StageStatus,equals,Long Statement,The length of the statement "return new EqualsBuilder().append(x`item.getX()).append(y`item.getY()).append(width`item.getWidth()).append(height`item.getHeight()).append(mode`item.getMode()).isEquals();" is 172.
+.,org.pdfsam.ui,StageStatusTest,testEquals,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.ui,StageStatusTest,testEquals,Magic Number,The method contains a magic number: 20
+.,org.pdfsam.ui,StageStatusTest,testEquals,Magic Number,The method contains a magic number: 100
+.,org.pdfsam.ui,StageStatusTest,testEquals,Magic Number,The method contains a magic number: 200
+.,org.pdfsam.ui,StageStatusTest,testEquals,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.ui,StageStatusTest,testEquals,Magic Number,The method contains a magic number: 20
+.,org.pdfsam.ui,StageStatusTest,testEquals,Magic Number,The method contains a magic number: 100
+.,org.pdfsam.ui,StageStatusTest,testEquals,Magic Number,The method contains a magic number: 200
+.,org.pdfsam.ui,StageStatusTest,testEquals,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.ui,StageStatusTest,testEquals,Magic Number,The method contains a magic number: 20
+.,org.pdfsam.ui,StageStatusTest,testEquals,Magic Number,The method contains a magic number: 100
+.,org.pdfsam.ui,StageStatusTest,testEquals,Magic Number,The method contains a magic number: 200
+.,org.pdfsam.ui,StageStatusTest,testEquals,Magic Number,The method contains a magic number: 20
+.,org.pdfsam.ui,StageStatusTest,testEquals,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.ui,StageStatusTest,testEquals,Magic Number,The method contains a magic number: 200
+.,org.pdfsam.ui,StageStatusTest,testEquals,Magic Number,The method contains a magic number: 100
+.,org.pdfsam.ui,ContentPane,ContentPane,Magic Number,The method contains a magic number: 300
+.,org.pdfsam.ui,ContentPane,ContentPane,Magic Number,The method contains a magic number: 300
+.,org.pdfsam.ui,WorkspaceController,saveWorkspace,Long Statement,The length of the statement "CompletableFuture<Void> future=CompletableFuture.allOf(modules.stream().map(m -> CompletableFuture.runAsync(() -> eventStudio().broadcast(event`m.id()))).toArray(CompletableFuture[]::new)).thenRun(() -> service.saveWorkspace(event.getData()`event.workspace())).whenComplete((r`e) -> {" is 284.
+.,org.pdfsam.ui,WorkspaceController,loadWorspace,Long Statement,The length of the statement "return CompletableFuture.allOf(modules.stream().map(m -> CompletableFuture.runAsync(() -> eventStudio().broadcast(event`m.id()))).toArray(CompletableFuture[]::new)).thenRun(() -> {" is 180.
+.,org.pdfsam.ui,DefaultStageServiceTest,save,Long Statement,The length of the statement "StageStatus storedStatus=JSON.std.beanFrom(StageStatus.class`Preferences.userRoot().node(DefaultStageService.STAGE_PATH).get(DefaultStageService.STAGE_STATUS_KEY`""));" is 167.
+.,org.pdfsam.ui,DefaultStageServiceTest,save,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.ui,DefaultStageServiceTest,save,Magic Number,The method contains a magic number: 20
+.,org.pdfsam.ui,DefaultStageServiceTest,save,Magic Number,The method contains a magic number: 100
+.,org.pdfsam.ui,DefaultStageServiceTest,save,Magic Number,The method contains a magic number: 200
+.,org.pdfsam.ui,DefaultStageServiceTest,testClear,Long Statement,The length of the statement "assertTrue(isBlank(Preferences.userRoot().node(DefaultStageService.STAGE_PATH).get(DefaultStageService.STAGE_STATUS_KEY`"")));" is 126.
+.,org.pdfsam.ui,DefaultStageServiceTest,testClear,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.ui,DefaultStageServiceTest,testClear,Magic Number,The method contains a magic number: 20
+.,org.pdfsam.ui,DefaultStageServiceTest,testClear,Magic Number,The method contains a magic number: 100
+.,org.pdfsam.ui,DefaultStageServiceTest,testClear,Magic Number,The method contains a magic number: 200
+.,org.pdfsam.ui,DefaultStageServiceTest,getLatest,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.ui,DefaultStageServiceTest,getLatest,Magic Number,The method contains a magic number: 20
+.,org.pdfsam.ui,DefaultStageServiceTest,getLatest,Magic Number,The method contains a magic number: 100
+.,org.pdfsam.ui,DefaultStageServiceTest,getLatest,Magic Number,The method contains a magic number: 200
+.,org.pdfsam.ui,PreferencesRecentWorkspacesServiceTest,noDuplicate,Magic Number,The method contains a magic number: 150
+.,org.pdfsam.ui,PreferencesRecentWorkspacesServiceTest,noDuplicateIsPushedTop,Magic Number,The method contains a magic number: 150
+.,org.pdfsam.ui,PreferencesRecentWorkspacesServiceTest,noDuplicateIsPushedTop,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui,PreferencesRecentWorkspacesServiceTest,noDuplicateIsPushedTop,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui,PreferencesRecentWorkspacesServiceTest,isPopulated,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui,PreferencesRecentWorkspacesServiceTest,isSorted,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui,PreferencesRecentWorkspacesServiceTest,isSorted,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui,PreferencesRecentWorkspacesServiceTest,populate,Magic Number,The method contains a magic number: 150
+.,org.pdfsam.ui.workspace,SaveWorkspaceEventTest,multipleAdd,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.update,UpdatesControllerTest,pasitiveCheckForUpdates,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.update,UpdatesControllerTest,pasitiveCheckForUpdates,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.update,UpdatesControllerTest,pasitiveCheckForUpdatesNotifyNoUpdates,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.update,UpdatesControllerTest,pasitiveCheckForUpdatesNotifyNoUpdates,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.update,UpdatesControllerTest,pasitiveCheckForUpdatesNotifyNoUpdates,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.update,UpdatesControllerTest,negativeCheckForUpdates,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.update,UpdatesControllerTest,negativeCheckForUpdates,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.update,UpdatesControllerTest,negativeCheckForUpdatesNotifyNoUpdates,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.update,UpdatesControllerTest,negativeCheckForUpdatesNotifyNoUpdates,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.update,UpdatesControllerTest,negativeCheckForUpdatesNotifyNoUpdates,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.update,UpdatesControllerTest,exceptionalCheckForUpdates,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.update,UpdatesControllerTest,exceptionalCheckForUpdates,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.extract,ExtractModule,settingPanel,Long Statement,The length of the statement "pane.getChildren().addAll(selectionPane`titledPane(DefaultI18nContext.getInstance().i18n("Extract settings")`extractOptions)`titledPane(DefaultI18nContext.getInstance().i18n("Output settings")`destinationPane)`prefixTitled);" is 224.
+.,org.pdfsam.extract,ExtractOptionsPane,ExtractOptionsPane,Long Statement,The length of the statement "getChildren().addAll(new Label(DefaultI18nContext.getInstance().i18n("Extract pages:"))`this.field`helpIcon("Comma separated page numbers or ranges to extract (ex: 2 or 5-23 or 2`5-7`12-)"));" is 191.
+.,org.pdfsam.extract,ExtractOptionsPane,ExtractOptionsPane,Magic Number,The method contains a magic number: 350
+.,org.pdfsam.extract,ExtractSelectionPane,ExtractSelectionPane,Long Statement,The length of the statement "super(ownerModule`false`false`new SelectionTableColumn<?>[]{new LoadingColumn(ownerModule)`FileColumn.NAME`LongColumn.SIZE`IntColumn.PAGES`LongColumn.LAST_MODIFIED});" is 166.
+.,org.pdfsam.extract,ExtractOptionsPaneTest,restoreState,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.extract,ExtractOptionsPaneTest,reset,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.extract,ExtractParametersBuilderTest,build,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.commons,Animations,shake,Long Statement,The length of the statement "Timeline timeline=new Timeline(new KeyFrame(Duration.millis(2500))`new KeyFrame(Duration.millis(0)`new KeyValue(node.scaleXProperty()`1`EASE_BOTH)`new KeyValue(node.scaleYProperty()`1`EASE_BOTH)`new KeyValue(node.rotateProperty()`0`EASE_BOTH))`new KeyFrame(Duration.millis(100)`new KeyValue(node.scaleXProperty()`0.9`EASE_BOTH)`new KeyValue(node.scaleYProperty()`0.9`EASE_BOTH)`new KeyValue(node.rotateProperty()`-3`EASE_BOTH))`new KeyFrame(Duration.millis(200)`new KeyValue(node.scaleXProperty()`0.9`EASE_BOTH)`new KeyValue(node.scaleYProperty()`0.9`EASE_BOTH)`new KeyValue(node.rotateProperty()`-3`EASE_BOTH))`new KeyFrame(Duration.millis(300)`new KeyValue(node.scaleXProperty()`1.1`EASE_BOTH)`new KeyValue(node.scaleYProperty()`1.1`EASE_BOTH)`new KeyValue(node.rotateProperty()`3`EASE_BOTH))`new KeyFrame(Duration.millis(400)`new KeyValue(node.scaleXProperty()`1.1`EASE_BOTH)`new KeyValue(node.scaleYProperty()`1.1`EASE_BOTH)`new KeyValue(node.rotateProperty()`-3`EASE_BOTH))`new KeyFrame(Duration.millis(500)`new KeyValue(node.scaleXProperty()`1.1`EASE_BOTH)`new KeyValue(node.scaleYProperty()`1.1`EASE_BOTH)`new KeyValue(node.rotateProperty()`3`EASE_BOTH))`new KeyFrame(Duration.millis(600)`new KeyValue(node.scaleXProperty()`1.1`EASE_BOTH)`new KeyValue(node.scaleYProperty()`1.1`EASE_BOTH)`new KeyValue(node.rotateProperty()`-3`EASE_BOTH))`new KeyFrame(Duration.millis(700)`new KeyValue(node.scaleXProperty()`1.1`EASE_BOTH)`new KeyValue(node.scaleYProperty()`1.1`EASE_BOTH)`new KeyValue(node.rotateProperty()`3`EASE_BOTH))`new KeyFrame(Duration.millis(800)`new KeyValue(node.scaleXProperty()`1.1`EASE_BOTH)`new KeyValue(node.scaleYProperty()`1.1`EASE_BOTH)`new KeyValue(node.rotateProperty()`-3`EASE_BOTH))`new KeyFrame(Duration.millis(900)`new KeyValue(node.scaleXProperty()`1.1`EASE_BOTH)`new KeyValue(node.scaleYProperty()`1.1`EASE_BOTH)`new KeyValue(node.rotateProperty()`3`EASE_BOTH))`new KeyFrame(Duration.millis(1000)`new KeyValue(node.scaleXProperty()`1`EASE_BOTH)`new KeyValue(node.scaleYProperty()`1`EASE_BOTH)`new KeyValue(node.rotateProperty()`0`EASE_BOTH)));" is 2077.
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 2500
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 100
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 0.9
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 0.9
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 200
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 0.9
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 0.9
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 300
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 1.1
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 1.1
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 400
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 1.1
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 1.1
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 500
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 1.1
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 1.1
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 600
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 1.1
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 1.1
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 700
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 1.1
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 1.1
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 800
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 1.1
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 1.1
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 900
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 1.1
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 1.1
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.ui.commons,Animations,shake,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.commons,RadioButtonDrivenTextFieldsPane,addRow,Magic Number,The method contains a magic number: 300
+.,org.pdfsam.ui.commons,RadioButtonDrivenTextFieldsPane,addRow,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.commons,ValidableTextField,ErrorTooltipManager,Complex Conditional,The conditional expression owner != null && owner.isShowing() && ValidableTextField.this.isVisible() is complex.
+.,org.pdfsam.ui.commons,ValidableTextField,ErrorTooltipManager,Magic Number,The method contains a magic number: 5000
+.,org.pdfsam.ui.commons,ValidableTextField,ErrorTooltipManager,Magic Number,The method contains a magic number: 250
+.,org.pdfsam.ui.commons,ValidableTextField,getDisplayCoordiantes,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.commons,ValidableTextField,getDisplayCoordiantes,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.commons,ErrorTooltipManager,ErrorTooltipManager,Complex Conditional,The conditional expression owner != null && owner.isShowing() && ValidableTextField.this.isVisible() is complex.
+.,org.pdfsam.ui.commons,ErrorTooltipManager,ErrorTooltipManager,Magic Number,The method contains a magic number: 5000
+.,org.pdfsam.ui.commons,ErrorTooltipManager,ErrorTooltipManager,Magic Number,The method contains a magic number: 250
+.,org.pdfsam.ui.commons,ErrorTooltipManager,getDisplayCoordiantes,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.commons,ErrorTooltipManager,getDisplayCoordiantes,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.commons,HideOnEscapeHandlerTest,showingMatch,Long Statement,The length of the statement "WaitForAsyncUtils.waitForAsyncFx(2000`() -> victim.handle(new KeyEvent(KeyEvent.KEY_RELEASED`KeyCode.ESCAPE.toString()`""`KeyCode.ESCAPE`false`false`false`false)));" is 164.
+.,org.pdfsam.ui.commons,HideOnEscapeHandlerTest,showingMatch,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.commons,RadioButtonDrivenTextFieldsPaneTest,nullHelp,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.commons,ValidableTextFieldTest,tooltip,Magic Number,The method contains a magic number: 500
+.,org.pdfsam.ui.help,HelpPopup,HelpPopup,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.io,BrowsableField,paste,Complex Conditional,The conditional expression text.length() > 2 && text.charAt(0) == '"' && text.charAt(text.length() - 1) == '"' is complex.
+.,org.pdfsam.ui.io,BrowsableField,paste,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.io,BrowsableField,BrowsableField,Long Statement,The length of the statement "textField.focusedProperty().addListener((o`oldVal`newVal) -> validableContainer.pseudoClassStateChanged(SELECTED_PSEUDOCLASS_STATE`newVal));" is 140.
+.,org.pdfsam.ui.io,BrowsableFileField,init,Long Statement,The length of the statement "getTextField().setPromptText(String.format("%s: %s"`DefaultI18nContext.getInstance().i18n("Select a file")`fileType.getFilter().getExtensions()));" is 146.
+.,org.pdfsam.ui.io,BrowsableFileField,buildErrorMessage,Long Statement,The length of the statement "String errorMessage=selectedFileMustExists ? DefaultI18nContext.getInstance().i18n("The selected file must exist. ") : "";" is 122.
+.,org.pdfsam.ui.io,BrowsableFileField,buildErrorMessage,Long Statement,The length of the statement "errorMessage+=DefaultI18nContext.getInstance().i18n("Allowed extensions are {0}"`fileType.getFilter().getExtensions().toString());" is 130.
+.,org.pdfsam.ui.io,BrowsableFileField,onDragDropped,Long Statement,The length of the statement "e.getDragboard().getFiles().stream().filter(f -> fileType.matches(f.getName())).findFirst().ifPresent(file -> setTextFromFile(file));" is 133.
+.,org.pdfsam.ui.io,DestinationPane,DestinationPane,Long Statement,The length of the statement "overwrite.setGraphic(helpIcon(DefaultI18nContext.getInstance().i18n("Tick the box if you want to overwrite the output files if they already exist.")));" is 151.
+.,org.pdfsam.ui.io,FileChoosers,getFileChooser,Long Statement,The length of the statement "FILE_INSTANCE.getExtensionFilters().setAll(Arrays.stream(filters).map(FileType::getFilter).collect(Collectors.toList()));" is 121.
+.,org.pdfsam.ui.io,PdfDestinationPane,PdfDestinationPane,Long Parameter List,The method has 5 parameters. 
+.,org.pdfsam.ui.io,PdfDestinationPane,PdfDestinationPane,Long Statement,The length of the statement "discardBookmarksField.setGraphic(helpIcon(DefaultI18nContext.getInstance().i18n("Tick the box if you don't want to retain any bookmark from the original PDF document")));" is 170.
+.,org.pdfsam.ui.io,PdfDestinationPane,PdfDestinationPane,Long Statement,The length of the statement "TitledPane titledAdvanced=Views.titledPane(DefaultI18nContext.getInstance().i18n("Show advanced settings")`advancedPanel);" is 122.
+.,org.pdfsam.ui.io,PdfDestinationPane,setDestination,Complex Conditional,The conditional expression !event.isFallback() || (isBlank(destination().getTextField().getText()) && userContext.isUseSmartOutput()) is complex.
+.,org.pdfsam.ui.io,PdfDestinationPane,restoreStateFrom,Long Statement,The length of the statement "ofNullable(data.get("version")).map(PdfVersion::valueOf).map(DefaultPdfVersionComboItem::new).ifPresent(v -> this.version.getSelectionModel().select(v));" is 153.
+.,org.pdfsam.ui.io,PdfVersionCombo,PdfVersionCombo,Long Statement,The length of the statement "Arrays.stream(PdfVersion.values()).filter(v -> v.getVersion() > PdfVersion.VERSION_1_2.getVersion()).map(DefaultPdfVersionComboItem::new).forEach(unfilteredItems::add);" is 168.
+.,org.pdfsam.ui.io,PdfVersionConstrainedCheckBox,PdfVersionConstrainedCheckBox,Long Statement,The length of the statement "this.setGraphic(helpIcon(DefaultI18nContext.getInstance().i18n("PDF version required: {0}"`this.constraint.getVersionString())));" is 129.
+.,org.pdfsam.ui.io,RememberingLatestFileChooserWrapper,showDialog,Missing default,The following switch statement is missing a default case: switch (type) {
+.,org.pdfsam.ui.io,BrowsableDirectoryFieldUITest,setGraphic,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.io,BrowsableDirectoryFieldUITest,nullGraphicDoesntExplode,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.io,BrowsableDirectoryFieldUITest,copyPasteInQuotes,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.io,BrowsableDirectoryFieldUITest,copyPasteNoQuotes,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.io,PdfDestinationPaneTest,reset,Long Statement,The length of the statement "Set<PdfVersion> available=victim.getVersion().getItems().stream().map(PdfVersionComboItem::getVersion).collect(Collectors.toSet());" is 131.
+.,org.pdfsam.ui.io,PdfDestinationPaneTest,reset,Long Statement,The length of the statement "assertThat(available`allOf(containsInAnyOrder(PdfVersion.VERSION_1_5`PdfVersion.VERSION_1_6`PdfVersion.VERSION_1_7)`not(containsInAnyOrder(PdfVersion.VERSION_1_2`PdfVersion.VERSION_1_3`PdfVersion.VERSION_1_4))));" is 212.
+.,org.pdfsam.ui.io,PdfDestinationPaneUITest,reset,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.io,PdfVersionComboTest,sameAsSourceVersion,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.io,PdfVersionComboTest,sameAsSourceVersionLowerThenConstraint,Magic Number,The method contains a magic number: 4
+.,org.pdfsam.ui.io,PdfVersionComboTest,sameAsSourceVersionLowerThenConstraint,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.io,PdfVersionComboTest,reset,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.io,PdfVersionComboTest,reset,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.io,PdfVersionFilterTest,remove,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.ui.module,BaseTaskExecutionModule,initModuleSettingsPanel,Long Statement,The length of the statement "Builder<? extends AbstractParameters> builder=getBuilder(errorTracker.andThen(s -> eventStudio().broadcast(new AddNotificationRequestEvent(NotificationType.ERROR`s`DefaultI18nContext.getInstance().i18n("Invalid parameters")))));" is 228.
+.,org.pdfsam.ui.module,Footer,onProgress,Long Statement,The length of the statement "statusLabel.setText(DefaultI18nContext.getInstance().i18n("Running {0}%"`Integer.toString(event.getPercentage().intValue())));" is 126.
+.,org.pdfsam.ui.module,Footer,onProgress,Magic Number,The method contains a magic number: 100
+.,org.pdfsam.ui.module,OpenButton,OpenButton,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.ui.module,OpenButton,onTaskCompleted,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.ui.module,FooterTest,onTaskCompleted,Magic Number,The method contains a magic number: 0.01
+.,org.pdfsam.ui.module,FooterTest,onTaskFailed,Magic Number,The method contains a magic number: 0.01
+.,org.pdfsam.ui.module,FooterTest,onProgress,Long Statement,The length of the statement "assertEquals(DefaultI18nContext.getInstance().i18n("Running {0}%"`"50")`((Labeled)victim.lookup(".status-label")).getText());" is 125.
+.,org.pdfsam.ui.module,FooterTest,onProgress,Magic Number,The method contains a magic number: 50
+.,org.pdfsam.ui.module,FooterTest,onProgress,Magic Number,The method contains a magic number: 0.5
+.,org.pdfsam.ui.module,FooterTest,onProgress,Magic Number,The method contains a magic number: 0.01
+.,org.pdfsam.ui.module,FooterTest,onProgressIndeterminate,Long Statement,The length of the statement "PercentageOfWorkDoneChangedEvent event=new PercentageOfWorkDoneChangedEvent(PercentageOfWorkDoneChangedEvent.UNDETERMINED`taskMetadata);" is 136.
+.,org.pdfsam.ui.module,FooterTest,onTaskExecutionRequest,Magic Number,The method contains a magic number: 0.01
+.,org.pdfsam.ui.module,OpenButtonTest,start,Magic Number,The method contains a magic number: 30
+.,org.pdfsam.ui.module,OpenButtonTest,openFileClick,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.module,OpenButtonTest,openDirectoryClick,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.module,OpenButtonTest,openSingleFileDirectoryDestinationClick,Magic Number,The method contains a magic number: 12
+.,org.pdfsam.ui.module,OpenButtonTest,openSingleFileDirectoryDestinationClick,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.module,OpenButtonTest,fileDestination,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.module,OpenButtonTest,directoryDestination,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.module,OpenButtonTest,fileOrDirDestination,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.module,OpenButtonTest,sendToModuleClick,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.ui.module,TaskFailedButtonTest,start,Magic Number,The method contains a magic number: 30
+.,org.pdfsam.ui.notification,NotificationsContainer,addNotification,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.notification,NotificationsContainer,fadeIn,Magic Number,The method contains a magic number: 300
+.,org.pdfsam.ui.notification,NotificationsController,onTaskFailed,Long Statement,The length of the statement "container.addNotification(DefaultI18nContext.getInstance().i18n("Invalid parameters")`buildLabel(DefaultI18nContext.getInstance().i18n("Input parameters are invalid` open the application messages for details.")`NotificationType.ERROR));" is 236.
+.,org.pdfsam.ui.notification,NotificationsController,onTaskFailed,Long Statement,The length of the statement "container.addNotification(DefaultI18nContext.getInstance().i18n("Access denied")`buildLabel(DefaultI18nContext.getInstance().i18n("Unable to access \"{0}\"` please make sure you have write permissions or open the application messages for details."`((AccessDeniedException)root).getFile())`NotificationType.ERROR));" is 314.
+.,org.pdfsam.ui.notification,NotificationsController,onTaskCompleted,Long Identifier,The length of the field TIMES_BEFORE_ENTERPRISE_NOTICE is 30.
+.,org.pdfsam.ui.notification,NotificationsController,onTaskCompleted,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.notification,NotificationsController,addDonationNotification,Long Statement,The length of the statement "VBox content=new VBox(3`buildLabel(DefaultI18nContext.getInstance().i18n("You performed {0} tasks with PDFsam` did it help?"`Long.toString(usages))`NotificationType.GO_PRO)`styledUrlButton(DefaultI18nContext.getInstance().i18n("Give something back")`pdfsam.property(ConfigurableProperty.DONATE_URL)`null));" is 306.
+.,org.pdfsam.ui.notification,NotificationsController,addDonationNotification,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.notification,NotificationsController,addShareNotification,Long Statement,The length of the statement "VBox content=new VBox(3`buildLabel(DefaultI18nContext.getInstance().i18n("You performed {0} tasks with PDFsam` did it help?"`Long.toString(usages))`NotificationType.SHARE)`new HBox(3`spacer`styledUrlButton(null`pdfsam.property(ConfigurableProperty.FACEBOOK_SHARE_URL)`FontAwesomeIcon.FACEBOOK)`styledUrlButton(DefaultI18nContext.getInstance().i18n("Spread the word!")`pdfsam.property(ConfigurableProperty.TWEETER_SHARE_URL)`FontAwesomeIcon.TWITTER)));" is 451.
+.,org.pdfsam.ui.notification,NotificationsController,addShareNotification,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.notification,NotificationsController,addShareNotification,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.notification,NotificationsController,onUpdateAvailable,Long Statement,The length of the statement "VBox content=new VBox(3`buildLabel(DefaultI18nContext.getInstance().i18n("PDFsam {0} is available for download"`event.availableVersion)`NotificationType.INFO)`styledUrlButton(DefaultI18nContext.getInstance().i18n("Download")`pdfsam.property(ConfigurableProperty.DOWNLOAD_URL)`null));" is 283.
+.,org.pdfsam.ui.notification,NotificationsController,onUpdateAvailable,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.notification,NotificationsController,onNoUpdateAvailable,Long Statement,The length of the statement "VBox content=new VBox(3`buildLabel(DefaultI18nContext.getInstance().i18n("You are running the latest version of PDFsam Basic")`NotificationType.INFO));" is 151.
+.,org.pdfsam.ui.notification,NotificationsController,onNoUpdateAvailable,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.notification,NotificationsController,onNewImportantNews,Long Statement,The length of the statement "VBox content=new VBox(3`buildLabel(event.news.getContent()`null)`styledUrlButton(DefaultI18nContext.getInstance().i18n("Open")`event.news.getLink()`FontAwesomeIcon.EXTERNAL_LINK));" is 180.
+.,org.pdfsam.ui.notification,NotificationsController,onNewImportantNews,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.notification,NotificationsContainerTest,addNotification,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.notification,NotificationsContainerTest,addStickyNotification,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.notification,NotificationsControllerTest,onInvalidParameters,Long Statement,The length of the statement "TaskExecutionFailedEvent event=new TaskExecutionFailedEvent(new InvalidTaskParametersException(""`Collections.emptyList())`null);" is 129.
+.,org.pdfsam.ui.notification,NotificationsControllerTest,onAccessDenied,Long Statement,The length of the statement "TaskExecutionFailedEvent event=new TaskExecutionFailedEvent(new TaskIOException(new AccessDeniedException("the file"))`null);" is 125.
+.,org.pdfsam.ui.notification,NotificationsControllerTest,onTaskCompleteAndNoProDisplay,Magic Number,The method contains a magic number: 6L
+.,org.pdfsam.ui.notification,NotificationsControllerTest,onTaskCompleteAndProDisplay,Magic Number,The method contains a magic number: 5L
+.,org.pdfsam.ui.notification,NotificationsControllerTest,onTaskCompleteDontDisplaySettingIsOn,Magic Number,The method contains a magic number: 5L
+.,org.pdfsam.ui.prefix,PrefixField,PrefixField,Magic Number,The method contains a magic number: 300
+.,org.pdfsam.ui.prefix,PrefixField,PrefixMenuItem,Long Statement,The length of the statement "this(ofNullable(prefix).map(Prefix::getFriendlyName).orElseThrow(() -> new IllegalArgumentException("Prefix cannot be null")));" is 127.
+.,org.pdfsam.ui.prefix,PrefixMenuItem,PrefixMenuItem,Long Statement,The length of the statement "this(ofNullable(prefix).map(Prefix::getFriendlyName).orElseThrow(() -> new IllegalArgumentException("Prefix cannot be null")));" is 127.
+.,org.pdfsam.ui.prefix,PrefixPane,PrefixPane,Long Statement,The length of the statement "getChildren().addAll(new Label(DefaultI18nContext.getInstance().i18n("Generated PDF documents name prefix:"))`field`helpIcon(new TextFlow(new Text(ctx.i18n("Prefix for the output files name.") + System.lineSeparator())`new Text(ctx.i18n("Some special keywords are replaced with runtime values.") + System.lineSeparator())`new Text(ctx.i18n("Right click to add these keywords.")))));" is 382.
+.,org.pdfsam.ui.prefix,PrefixFieldTest,contextMenuReplacesText,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.prefix,PrefixFieldTest,contextMenuReplacesText,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.selection,PasswordFieldPopup,PasswordFieldPopupContent,Long Statement,The length of the statement "Button doneButton=FontAwesomeIconFactory.get().createIconButton(FontAwesomeIcon.UNLOCK`DefaultI18nContext.getInstance().i18n("Unlock"));" is 136.
+.,org.pdfsam.ui.selection,PasswordFieldPopupContent,PasswordFieldPopupContent,Long Statement,The length of the statement "Button doneButton=FontAwesomeIconFactory.get().createIconButton(FontAwesomeIcon.UNLOCK`DefaultI18nContext.getInstance().i18n("Unlock"));" is 136.
+.,org.pdfsam.ui.selection.multiple,IndexColumn,IndexColumn,Magic Number,The method contains a magic number: 26
+.,org.pdfsam.ui.selection.multiple,IndexColumn,IndexColumn,Magic Number,The method contains a magic number: 86
+.,org.pdfsam.ui.selection.multiple,LoadingColumn,cellFactory,Long Statement,The length of the statement "@Override public TableCell<SelectionTableRowData`PdfDescriptorLoadingStatus> call( TableColumn<SelectionTableRowData`PdfDescriptorLoadingStatus> param){" is 152.
+.,org.pdfsam.ui.selection.multiple,LoadingColumn,getTableColumn,Magic Number,The method contains a magic number: 26
+.,org.pdfsam.ui.selection.multiple,LoadingColumn,getTableColumn,Magic Number,The method contains a magic number: 26
+.,org.pdfsam.ui.selection.multiple,PaceColumn,getTableColumn,Long Statement,The length of the statement "tableColumn.setOnEditCommit(t -> t.getTableView().getItems().get(t.getTablePosition().getRow()).pace.set(defaultIfBlank(t.getNewValue()`"1")));" is 143.
+.,org.pdfsam.ui.selection.multiple,PaceColumn,cellFactory,Long Statement,The length of the statement "return new TooltippedTextFieldTableCell(DefaultI18nContext.getInstance().i18n("Double click to set the number of pages after which the task will switch to the next file"));" is 172.
+.,org.pdfsam.ui.selection.multiple,PaceColumn,call,Long Statement,The length of the statement "return new TooltippedTextFieldTableCell(DefaultI18nContext.getInstance().i18n("Double click to set the number of pages after which the task will switch to the next file"));" is 172.
+.,org.pdfsam.ui.selection.multiple,PageRangesColumn,getTableColumn,Long Statement,The length of the statement "tableColumn.setOnEditCommit(t -> t.getTableView().getItems().get(t.getTablePosition().getRow()).pageSelection.set(t.getNewValue()));" is 132.
+.,org.pdfsam.ui.selection.multiple,ReverseColumn,getTableColumn,Long Statement,The length of the statement "tableColumn.setCellValueFactory(new Callback<CellDataFeatures<SelectionTableRowData`Boolean>`ObservableValue<Boolean>>(){" is 121.
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEvent,canMove,Missing default,The following switch statement is missing a default case: switch (type) {
+.,org.pdfsam.ui.selection.multiple,SelectionTable,initTopSectionContextMenu,Long Statement,The length of the statement "MenuItem setDestinationItem=createMenuItem(DefaultI18nContext.getInstance().i18n("Set destination")`MaterialDesignIcon.AIRPLANE_LANDING);" is 137.
+.,org.pdfsam.ui.selection.multiple,SelectionTable,initTopSectionContextMenu,Long Statement,The length of the statement "setDestinationItem.setOnAction(e -> eventStudio().broadcast(requestDestination(getSelectionModel().getSelectedItem().descriptor().getFile()`getOwnerModule())`getOwnerModule()));" is 177.
+.,org.pdfsam.ui.selection.multiple,SelectionTable,initTopSectionContextMenu,Long Statement,The length of the statement "MenuItem setPageRangesItem=createMenuItem(DefaultI18nContext.getInstance().i18n("Set as range for all")`MaterialDesignIcon.FORMAT_INDENT_INCREASE);" is 147.
+.,org.pdfsam.ui.selection.multiple,SelectionTable,initTopSectionContextMenu,Long Statement,The length of the statement "setPageRangesItem.setOnAction(e -> eventStudio().broadcast(new SetPageRangesRequest(getSelectionModel().getSelectedItem().pageSelection.get())`getOwnerModule()));" is 162.
+.,org.pdfsam.ui.selection.multiple,SelectionTable,initItemsSectionContextMenu,Long Statement,The length of the statement "MenuItem moveTopSelected=createMenuItem(DefaultI18nContext.getInstance().i18n("Move to Top")`MaterialDesignIcon.CHEVRON_DOUBLE_UP);" is 131.
+.,org.pdfsam.ui.selection.multiple,SelectionTable,initItemsSectionContextMenu,Long Statement,The length of the statement "MenuItem moveDownSelected=createMenuItem(DefaultI18nContext.getInstance().i18n("Move Down")`MaterialDesignIcon.CHEVRON_DOWN);" is 125.
+.,org.pdfsam.ui.selection.multiple,SelectionTable,initItemsSectionContextMenu,Long Statement,The length of the statement "MenuItem moveBottomSelected=createMenuItem(DefaultI18nContext.getInstance().i18n("Move to Bottom")`MaterialDesignIcon.CHEVRON_DOUBLE_DOWN);" is 139.
+.,org.pdfsam.ui.selection.multiple,SelectionTable,initItemsSectionContextMenu,Long Statement,The length of the statement "MenuItem duplicateItem=createMenuItem(DefaultI18nContext.getInstance().i18n("Duplicate")`MaterialDesignIcon.CONTENT_DUPLICATE);" is 127.
+.,org.pdfsam.ui.selection.multiple,SelectionTable,initBottomSectionContextMenu,Long Statement,The length of the statement "MenuItem copyItem=createMenuItem(DefaultI18nContext.getInstance().i18n("Copy to clipboard")`MaterialDesignIcon.CONTENT_COPY);" is 125.
+.,org.pdfsam.ui.selection.multiple,SelectionTable,initBottomSectionContextMenu,Long Statement,The length of the statement "MenuItem infoItem=createMenuItem(DefaultI18nContext.getInstance().i18n("Document properties")`MaterialDesignIcon.INFORMATION_OUTLINE);" is 134.
+.,org.pdfsam.ui.selection.multiple,SelectionTable,initBottomSectionContextMenu,Long Statement,The length of the statement "infoItem.setOnAction(e -> Platform.runLater(() -> eventStudio().broadcast(new ShowPdfDescriptorRequest(getSelectionModel().getSelectedItem().descriptor()))));" is 158.
+.,org.pdfsam.ui.selection.multiple,SelectionTable,initBottomSectionContextMenu,Long Statement,The length of the statement "openFileItem.setOnAction(e -> eventStudio().broadcast(new OpenFileRequest(getSelectionModel().getSelectedItem().descriptor().getFile())));" is 138.
+.,org.pdfsam.ui.selection.multiple,SelectionTable,initBottomSectionContextMenu,Long Statement,The length of the statement "MenuItem openFolderItem=createMenuItem(DefaultI18nContext.getInstance().i18n("Open Folder")`MaterialDesignIcon.FOLDER_OUTLINE);" is 127.
+.,org.pdfsam.ui.selection.multiple,SelectionTable,initBottomSectionContextMenu,Long Statement,The length of the statement "openFolderItem.setOnAction(e -> eventStudio().broadcast(new OpenFileRequest(getSelectionModel().getSelectedItem().descriptor().getFile().getParentFile())));" is 156.
+.,org.pdfsam.ui.selection.multiple,SelectionTable,initDragAndDrop,Complex Method,Cyclomatic complexity of the method is 12
+.,org.pdfsam.ui.selection.multiple,SelectionTable,initDragAndDrop,Long Statement,The length of the statement "List<SelectionTableRowData> toMove=dragged.stream().map(getItems()::get).filter(Objects::nonNull).collect(Collectors.toList());" is 127.
+.,org.pdfsam.ui.selection.multiple,SelectionTable,initDragAndDrop,Magic Number,The method contains a magic number: 0.6
+.,org.pdfsam.ui.selection.multiple,SelectionTable,onLoadDocumentsRequest,Long Statement,The length of the statement "loadEvent.getDocuments().stream().findFirst().ifPresent(f -> eventStudio().broadcast(requestFallbackDestination(f.getFile()`getOwnerModule())`getOwnerModule()));" is 161.
+.,org.pdfsam.ui.selection.multiple,SelectionTable,showPasswordFieldPopup,Long Statement,The length of the statement "Point2D nodeCoord=request.getRequestingNode().localToScene(request.getRequestingNode().getWidth() / 2`request.getRequestingNode().getHeight() / 1.5);" is 149.
+.,org.pdfsam.ui.selection.multiple,SelectionTable,showPasswordFieldPopup,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.selection.multiple,SelectionTable,showPasswordFieldPopup,Magic Number,The method contains a magic number: 1.5
+.,org.pdfsam.ui.selection.multiple,SelectionTable,showPasswordFieldPopup,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.selection.multiple,SelectionTable,showPasswordFieldPopup,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.selection.multiple,SelectionTable,copySelectedToClipboard,Long Statement,The length of the statement "return item.descriptor().getFile().getAbsolutePath() + "` " + item.descriptor().getFile().length()+ "` "+ item.descriptor().pages().getValue();" is 143.
+.,org.pdfsam.ui.selection.multiple,SelectionTable,restoreStateFrom,Long Statement,The length of the statement "PdfDocumentDescriptor descriptor=PdfDocumentDescriptor.newDescriptor(new File(f)`ofNullable(data.get(id + "input.password.enc" + i)).map(EncryptionUtils::decrypt).orElseGet(() -> data.get(defaultString(getId()) + "input.password." + i)));" is 238.
+.,org.pdfsam.ui.selection.multiple,SelectionTableToolbar,loadDocuments,Long Statement,The length of the statement "RememberingLatestFileChooserWrapper fileChooser=FileChoosers.getFileChooser(DefaultI18nContext.getInstance().i18n("Select pdf documents to load")`FileType.PDF);" is 160.
+.,org.pdfsam.ui.selection.multiple,SelectionTableToolbar,loadList,Long Statement,The length of the statement "RememberingLatestFileChooserWrapper fileChooser=FileChoosers.getFileChooser(DefaultI18nContext.getInstance().i18n("Select a text or CSV file to load")`FileType.CSV`FileType.TXT);" is 178.
+.,org.pdfsam.ui.selection.multiple,AddButton,loadDocuments,Long Statement,The length of the statement "RememberingLatestFileChooserWrapper fileChooser=FileChoosers.getFileChooser(DefaultI18nContext.getInstance().i18n("Select pdf documents to load")`FileType.PDF);" is 160.
+.,org.pdfsam.ui.selection.multiple,AddButton,loadList,Long Statement,The length of the statement "RememberingLatestFileChooserWrapper fileChooser=FileChoosers.getFileChooser(DefaultI18nContext.getInstance().i18n("Select a text or CSV file to load")`FileType.CSV`FileType.TXT);" is 178.
+.,org.pdfsam.ui.selection.multiple,TooltippedTextFieldTableCell,TooltippedTextFieldTableCell,Complex Method,Cyclomatic complexity of the method is 8
+.,org.pdfsam.ui.selection.multiple,TooltippedTextFieldTableCell,commitEdit,Long Statement,The length of the statement "CellEditEvent<SelectionTableRowData`String> event=new CellEditEvent<>(table`new TablePosition<>(table`getIndex()`column)`TableColumn.editCommitEvent()`item);" is 157.
+.,org.pdfsam.ui.selection.multiple,IntegerColumnTest,comparators,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.ui.selection.multiple,IntegerColumnTest,pages,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.ui.selection.multiple,IntegerColumnTest,getPagesObservableValue,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.ui.selection.multiple,IntegerColumnTest,getPagesObservableValue,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.ui.selection.multiple,LongColumnTest,comparators,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.ui.selection.multiple,LongColumnTest,size,Magic Number,The method contains a magic number: 1024
+.,org.pdfsam.ui.selection.multiple,LongColumnTest,size,Magic Number,The method contains a magic number: 1024
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,single,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,single,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,single,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,getSingle,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,getSingle,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,getSingle,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,canMoveUp,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,canMoveUp,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,canMoveUp,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,cantMoveUp,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,cantMoveUp,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,cantMoveBottom,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,cantMoveBottom,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,cantMoveBottom,Magic Number,The method contains a magic number: 4
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,cantMoveBottom,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,canMoveBottom,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,canMoveBottom,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,cantMoveDown,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,cantMoveDown,Magic Number,The method contains a magic number: 4
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,cantMoveDown,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,canMoveDown,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,canMoveDown,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,cantMoveTop,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,cantMoveTop,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,cantMoveTop,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,canMoveTop,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.selection.multiple,SelectionChangedEventTest,canMoveTop,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,start,Long Statement,The length of the statement "victim=new SelectionTable(MODULE`true`true`new SelectionTableColumn<?>[]{new LoadingColumn(MODULE)`FileColumn.NAME`LongColumn.SIZE`IntColumn.PAGES`LongColumn.LAST_MODIFIED`new PageRangesColumn()});" is 197.
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,itemsAdded,Magic Number,The method contains a magic number: 4
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,onSaveWorkspaceEmpty,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,onSaveWorkspaceEncryptedPwdStored,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,onSaveWorkspaceEncryptedNoPwdStored,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,restoreStateFromPwdBackwardCompatible,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,restoreStateFrom,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,restoreStateFrom,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,restoreStateFromEmpty,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,restoreStateFromSizeZero,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,clear,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,encryptedThrowsRequest,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,encryptedThrowsRequest,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,removeByContextMenu,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,removeMultiple,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,removeMultiple,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,removeRelease,Long Statement,The length of the statement "Optional<SelectionTableRowData> item=victim.getItems().stream().filter(i -> "temp.pdf".equals(i.descriptor().getFileName())).findFirst();" is 137.
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,removeRelease,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,clearInvalidatesDuplicatedItems,Long Statement,The length of the statement "Optional<SelectionTableRowData> item=victim.getItems().stream().filter(i -> "temp.pdf".equals(i.descriptor().getFileName())).findFirst();" is 137.
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,clearInvalidatesDuplicatedItems,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,duplicate,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,moveSelected,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,moveBottomByContextMenu,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,moveUpByContextMenu,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,moveTopByContextMenu,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,copy,Long Statement,The length of the statement "WaitForAsyncUtils.waitForAsyncFx(2000`() -> assertFalse(StringUtils.isEmpty(Clipboard.getSystemClipboard().getContent(DataFormat.PLAIN_TEXT).toString())));" is 155.
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,copy,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,copy,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,pageRangesForAllByContextMenu,Long Statement,The length of the statement "Optional<SelectionTableRowData> item=victim.getItems().stream().filter(i -> "temp.pdf".equals(i.descriptor().getFileName())).findFirst();" is 137.
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,infoByContextMenu,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,iconsAreShown,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,iconsAreShown,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,clickWithErrorsShowsLogStage,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,logEventOnclickOn,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,logEventOnclickOn,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,editCommitOnFocusLost,Long Statement,The length of the statement "Optional<SelectionTableRowData> item=victim.getItems().stream().filter(i -> "temp.pdf".equals(i.descriptor().getFileName())).findFirst();" is 137.
+.,org.pdfsam.ui.selection.multiple,SelectionTableTest,populate,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.multiple,SelectionTableToolbarTest,enableByFiringSelectionChange,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.multiple,SelectionTableToolbarTest,enableByFiringSelectionChange,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.selection.multiple,SelectionTableToolbarTest,enableByFiringSelectionChange,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.selection.multiple,SelectionTableToolbarTest,enableByFiringSelectionChange,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.selection.multiple,SelectionTableWithoutDuplicateTest,start,Long Statement,The length of the statement "victim=new SelectionTable(MODULE`false`true`new SelectionTableColumn<?>[]{new LoadingColumn(MODULE)`FileColumn.NAME`LongColumn.SIZE`IntColumn.PAGES`LongColumn.LAST_MODIFIED`new PageRangesColumn()});" is 198.
+.,org.pdfsam.ui.selection.multiple,SelectionTableWithoutDuplicateTest,populate,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.multiple,SelectionTableWithoutMoveTest,start,Long Statement,The length of the statement "SelectionTable victim=new SelectionTable(MODULE`true`false`new SelectionTableColumn<?>[]{new LoadingColumn(MODULE)`FileColumn.NAME`LongColumn.SIZE`IntColumn.PAGES`LongColumn.LAST_MODIFIED`new PageRangesColumn()});" is 213.
+.,org.pdfsam.ui.selection.multiple,SelectionTableWithoutMoveTest,populate,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.multiple.move,MoveTypeTest,moveBottom,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.selection.multiple.move,MultipleSelectionAndFocusTest,moveUp,Magic Number,The method contains a magic number: 4
+.,org.pdfsam.ui.selection.multiple.move,MultipleSelectionAndFocusTest,moveUp,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.selection.multiple.move,MultipleSelectionAndFocusTest,moveUp,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.selection.multiple.move,MultipleSelectionAndFocusTest,moveUpWithFocus,Magic Number,The method contains a magic number: 4
+.,org.pdfsam.ui.selection.multiple.move,MultipleSelectionAndFocusTest,moveUpWithFocus,Magic Number,The method contains a magic number: 4
+.,org.pdfsam.ui.selection.multiple.move,MultipleSelectionAndFocusTest,moveUpWithFocus,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.selection.multiple.move,MultipleSelectionAndFocusTest,moveUpWithFocus,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.selection.multiple.move,MultipleSelectionAndFocusTest,moveDown,Magic Number,The method contains a magic number: 6
+.,org.pdfsam.ui.selection.multiple.move,MultipleSelectionAndFocusTest,moveDown,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.selection.multiple.move,MultipleSelectionAndFocusTest,moveDown,Magic Number,The method contains a magic number: 7
+.,org.pdfsam.ui.selection.multiple.move,MultipleSelectionAndFocusTest,moveDownWithFocus,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.selection.multiple.move,MultipleSelectionAndFocusTest,moveDownWithFocus,Magic Number,The method contains a magic number: 4
+.,org.pdfsam.ui.selection.multiple.move,MultipleSelectionAndFocusTest,moveDownWithFocus,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.selection.multiple.move,MultipleSelectionAndFocusTest,moveDownWithFocus,Magic Number,The method contains a magic number: 6
+.,org.pdfsam.ui.selection.multiple.move,SingleSelectionAndFocusTest,positive,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.ui.selection.multiple.move,SingleSelectionAndFocusTest,positive,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.ui.selection.multiple.move,SingleSelectionAndFocusTest,positive,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.ui.selection.single,SingleSelectionPane,SingleSelectionPane,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.selection.single,SingleSelectionPane,showPasswordFieldPopup,Long Statement,The length of the statement "Point2D nodeCoord=encryptionIndicator.localToScene(encryptionIndicator.getWidth() / 2`encryptionIndicator.getHeight() / 1.5);" is 125.
+.,org.pdfsam.ui.selection.single,SingleSelectionPane,showPasswordFieldPopup,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.selection.single,SingleSelectionPane,showPasswordFieldPopup,Magic Number,The method contains a magic number: 1.5
+.,org.pdfsam.ui.selection.single,SingleSelectionPane,showPasswordFieldPopup,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.selection.single,SingleSelectionPane,showPasswordFieldPopup,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.selection.single,SingleSelectionPane,restoreStateFrom,Long Statement,The length of the statement "initializeFor(newDescriptor(new File(f)`ofNullable(data.get(defaultString(getId()) + "input.password.enc")).map(EncryptionUtils::decrypt).orElseGet(() -> data.get(defaultString(getId()) + "input.password"))));" is 209.
+.,org.pdfsam.ui.selection.single,SingleSelectionPane,initContextMenu,Long Statement,The length of the statement "MenuItem infoItem=createMenuItem(DefaultI18nContext.getInstance().i18n("Document properties")`MaterialDesignIcon.INFORMATION_OUTLINE);" is 134.
+.,org.pdfsam.ui.selection.single,SingleSelectionPane,initContextMenu,Long Statement,The length of the statement "MenuItem setDestinationItem=createMenuItem(DefaultI18nContext.getInstance().i18n("Set destination")`MaterialDesignIcon.AIRPLANE_LANDING);" is 137.
+.,org.pdfsam.ui.selection.single,SingleSelectionPane,initContextMenu,Long Statement,The length of the statement "setDestinationItem.setOnAction(e -> eventStudio().broadcast(requestDestination(descriptor.getFile()`getOwnerModule())`getOwnerModule()));" is 137.
+.,org.pdfsam.ui.selection.single,SingleSelectionPane,initContextMenu,Long Statement,The length of the statement "MenuItem openFolderItem=createMenuItem(DefaultI18nContext.getInstance().i18n("Open Folder")`MaterialDesignIcon.FOLDER_OUTLINE);" is 127.
+.,org.pdfsam.ui.selection.single,SingleSelectionPane,initContextMenu,Long Statement,The length of the statement "field.getTextField().setContextMenu(new ContextMenu(setDestinationItem`new SeparatorMenuItem()`removeSelected`new SeparatorMenuItem()`infoItem`openFileItem`openFolderItem));" is 173.
+.,org.pdfsam.ui.selection.single,SingleSelectionPaneTest,disableMenuOnInvalid,Long Statement,The length of the statement "victim.getContextMenu().getItems().parallelStream().filter(i -> !(i instanceof SeparatorMenuItem)).filter(i -> !i.getText().equals(DefaultI18nContext.getInstance().i18n("Remove"))).forEach(i -> assertTrue(i.getText()`i.isDisable()));" is 233.
+.,org.pdfsam.ui.selection.single,SingleSelectionPaneTest,disableMenuOnSwitchToInvalid,Long Statement,The length of the statement "victim.getContextMenu().getItems().parallelStream().filter(i -> !(i instanceof SeparatorMenuItem)).filter(i -> !i.getText().equals(DefaultI18nContext.getInstance().i18n("Remove"))).forEach(i -> assertTrue(i.isDisable()));" is 221.
+.,org.pdfsam.ui.selection.single,SingleSelectionPaneTest,loadingStateDetails,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.single,SingleSelectionPaneTest,restoreStateFromPwdBackwardCompatible,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.single,SingleSelectionPaneTest,restoreStateFrom,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.single,SingleSelectionPaneTest,restoreStateFromEmpty,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.single,SingleSelectionPaneTest,clickWithErrorsShowsLogStage,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.single,SingleSelectionPaneTest,clickEncryptedThrowsRequest,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.selection.single,SingleSelectionPaneTest,invalidatedDescriptorDoesntTriggerAnything,Long Statement,The length of the statement "field.getContextMenu().getItems().parallelStream().filter(i -> !(i instanceof SeparatorMenuItem)).filter(i -> !i.getText().equals(DefaultI18nContext.getInstance().i18n("Remove"))).forEach(i -> assertTrue(i.isDisable()));" is 220.
+.,org.pdfsam.ui.selection.single,SingleSelectionPaneTest,invalidatedDescriptorDoesntTriggerAnything,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.single,SingleSelectionPaneTest,moveToLoadedState,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.single,SingleSelectionPaneTest,moveToEncrytedState,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.single,SingleSelectionPaneTest,moveToLoadedWithDecryption,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.selection.single,SingleSelectionPaneTest,moveToLoadedStateWithSpecialChars,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.support,CircularObservableListTest,add,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.support,CircularObservableListTest,add,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.support,CircularObservableListTest,add,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.support,CircularObservableListTest,add,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.support,CircularObservableListTest,addAll,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.support,CircularObservableListTest,addAll,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.support,CircularObservableListTest,addAll,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.support,CircularObservableListTest,addAll,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.support,CircularObservableListTest,addAllIndex,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.support,CircularObservableListTest,addAllIndex,Magic Number,The method contains a magic number: 100
+.,org.pdfsam.ui.support,CircularObservableListTest,addAllIndex,Magic Number,The method contains a magic number: 101
+.,org.pdfsam.ui.support,CircularObservableListTest,addAllIndex,Magic Number,The method contains a magic number: 102
+.,org.pdfsam.ui.support,CircularObservableListTest,addAllIndex,Magic Number,The method contains a magic number: 103
+.,org.pdfsam.ui.support,CircularObservableListTest,addAllIndex,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.support,CircularObservableListTest,addAllIndex,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.support,CircularObservableListTest,addAllIndex,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.support,CircularObservableListTest,addAllIndex,Magic Number,The method contains a magic number: 100
+.,org.pdfsam.ui.support,CircularObservableListTest,addAllIndex,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.support,CircularObservableListTest,addAllIndex,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.support,CircularObservableListTest,addAllIndex,Magic Number,The method contains a magic number: 102
+.,org.pdfsam.ui.support,CircularObservableListTest,addAllIndex,Magic Number,The method contains a magic number: 103
+.,org.pdfsam.ui.support,CircularObservableListTest,addAllIndex,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.support,CircularObservableListTest,addIndex,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.support,CircularObservableListTest,addIndex,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.support,CircularObservableListTest,addIndex,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.support,CircularObservableListTest,addIndex,Magic Number,The method contains a magic number: 100
+.,org.pdfsam.ui.support,CircularObservableListTest,addIndex,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.support,CircularObservableListTest,addIndex,Magic Number,The method contains a magic number: 100
+.,org.pdfsam.ui.support,CircularObservableListTest,addIndex,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.support,CircularObservableListTest,addIndex,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.support,CircularObservableListTest,addIndex,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.support,FXValidationSupportTest,startingState,Long Statement,The length of the statement "verify(listener`times(1)).changed(any(ObservableValue.class)`eq(ValidationState.NOT_VALIDATED)`eq(ValidationState.VALID));" is 122.
+.,org.pdfsam.ui.support,FXValidationSupportTest,behaviour,Long Statement,The length of the statement "verify(listener`times(1)).changed(any(ObservableValue.class)`eq(ValidationState.NOT_VALIDATED)`eq(ValidationState.VALID));" is 122.
+.,org.pdfsam.ui.banner,AppContextMenu,AppContextMenu,Long Statement,The length of the statement "if (!Boolean.getBoolean(PreferencesDashboardItem.PDFSAM_DISABLE_SETTINGS_DEPRECATED) && !Boolean.getBoolean(PreferencesDashboardItem.PDFSAM_DISABLE_SETTINGS)) {" is 160.
+.,org.pdfsam.ui.banner,WorkspaceMenu,saveWorkspace,Long Statement,The length of the statement "RememberingLatestFileChooserWrapper fileChooser=FileChoosers.getFileChooser(DefaultI18nContext.getInstance().i18n("Select the workspace file to save")`FileType.JSON);" is 166.
+.,org.pdfsam.ui.banner,WorkspaceMenu,loadWorkspace,Long Statement,The length of the statement "RememberingLatestFileChooserWrapper fileChooser=FileChoosers.getFileChooser(DefaultI18nContext.getInstance().i18n("Select the workspace to load")`FileType.JSON);" is 161.
+.,org.pdfsam.ui.banner,WorkspaceMenuItem,WorkspaceMenuItem,Magic Number,The method contains a magic number: 60
+.,org.pdfsam.ui.banner,BannerPaneTest,title,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.banner,ModulesMenuTest,onSaveClick,Long Statement,The length of the statement "clickOn(".button").clickOn("#modulesMenu").clickOn(module.descriptor().category.getDescription()).clickOn(module.descriptor().getName());" is 137.
+.,org.pdfsam.ui.banner,WorkspaceMenuTest,onRecentWorkspace,Long Statement,The length of the statement "clickOn(".button").clickOn("#workspaceMenu").moveTo("#loadWorkspace").moveTo("#saveWorkspace").clickOn("#recentWorkspace").clickOn("Chuck");" is 140.
+.,org.pdfsam.ui.banner,WorkspaceMenuTest,recentIsUpdated,Long Statement,The length of the statement "clickOn(".button").clickOn("#workspaceMenu").moveTo("#loadWorkspace").moveTo("#saveWorkspace").clickOn("#recentWorkspace").clickOn("Michael");" is 142.
+.,org.pdfsam.ui.banner,WorkspaceMenuTest,recentIsUpdatedAndMnemonicAreNotParsed,Long Statement,The length of the statement "clickOn(".button").clickOn("#workspaceMenu").moveTo("#loadWorkspace").moveTo("#saveWorkspace").clickOn("#recentWorkspace").clickOn("I_have_underscores");" is 153.
+.,org.pdfsam.ui.banner,WorkspaceMenuTest,recentIsCleared,Long Statement,The length of the statement "assertTrue(clickOn(".button").clickOn("#workspaceMenu").moveTo("#loadWorkspace").moveTo("#saveWorkspace").clickOn("#recentWorkspace").lookup("Michael").tryQuery().isPresent());" is 176.
+.,org.pdfsam.ui.banner,WorkspaceMenuTest,recentIsCleared,Long Statement,The length of the statement "clickOn(".button").clickOn("#workspaceMenu").moveTo("#loadWorkspace").moveTo("#saveWorkspace").clickOn("#clearWorkspaces");" is 123.
+.,org.pdfsam.ui.banner,WorkspaceMenuTest,recentIsCleared,Long Statement,The length of the statement "assertFalse(clickOn(".button").clickOn("#workspaceMenu").moveTo("#loadWorkspace").moveTo("#saveWorkspace").clickOn("#recentWorkspace").lookup("Michael").tryQuery().isPresent());" is 177.
+.,org.pdfsam.ui.dashboard.about,AboutDashboardPane,AboutDashboardPane,Long Statement,The length of the statement "addHyperlink(FontAwesomeIcon.RSS_SQUARE`pdfsam.property(FEED_URL)`DefaultI18nContext.getInstance().i18n("Subscribe to the official news feed")`left);" is 149.
+.,org.pdfsam.ui.dashboard.about,AboutDashboardPane,AboutDashboardPane,Long Statement,The length of the statement "Label runtime=new Label(String.format("%s %s"`System.getProperty("java.runtime.name")`System.getProperty("java.runtime.version")));" is 131.
+.,org.pdfsam.ui.dashboard.about,AboutDashboardPane,AboutDashboardPane,Long Statement,The length of the statement "Label vendor=new Label(String.format(DefaultI18nContext.getInstance().i18n("Vendor: %s")`System.getProperty("java.vendor")));" is 125.
+.,org.pdfsam.ui.dashboard.about,AboutDashboardPane,AboutDashboardPane,Long Statement,The length of the statement "Label runtimePath=new Label(String.format(DefaultI18nContext.getInstance().i18n("Java runtime path: %s")`System.getProperty("java.home")));" is 139.
+.,org.pdfsam.ui.dashboard.about,AboutDashboardPane,AboutDashboardPane,Long Statement,The length of the statement "Label fx=new Label(String.format(DefaultI18nContext.getInstance().i18n("JavaFX runtime version %s")`System.getProperty("javafx.runtime.version")));" is 147.
+.,org.pdfsam.ui.dashboard.about,AboutDashboardPane,AboutDashboardPane,Long Statement,The length of the statement "Label memory=new Label(DefaultI18nContext.getInstance().i18n("Max memory {0}"`FileUtils.byteCountToDisplaySize(Runtime.getRuntime().maxMemory())));" is 147.
+.,org.pdfsam.ui.dashboard.about,AboutDashboardPane,AboutDashboardPane,Long Statement,The length of the statement "writeContent(Arrays.asList(pdfsam.name()`pdfsam.property(VERSION)`runtime.getText()`vendor.getText()`runtimePath.getText()`fx.getText()`memory.getText())).to(content);" is 167.
+.,org.pdfsam.ui.dashboard.about,AboutDashboardPane,AboutDashboardPane,Long Statement,The length of the statement "addHyperlink(FontAwesomeIcon.BUG`pdfsam.property(TRACKER_URL)`DefaultI18nContext.getInstance().i18n("Bug and feature requests")`right);" is 135.
+.,org.pdfsam.ui.dashboard.about,AboutDashboardPane,AboutDashboardPane,Long Statement,The length of the statement "addHyperlink(FontAwesomeIcon.QUESTION_CIRCLE`pdfsam.property(SUPPORT_URL)`DefaultI18nContext.getInstance().i18n("Support")`right);" is 130.
+.,org.pdfsam.ui.dashboard.about,AboutDashboardPane,AboutDashboardPane,Long Statement,The length of the statement "addHyperlink(FontAwesomeIcon.BOOK`pdfsam.property(DOCUMENTATION_URL)`DefaultI18nContext.getInstance().i18n("Documentation")`right);" is 131.
+.,org.pdfsam.ui.dashboard.about,AboutDashboardPane,AboutDashboardPane,Long Statement,The length of the statement "addHyperlink(FontAwesomeIcon.GITHUB`pdfsam.property(SCM_URL)`DefaultI18nContext.getInstance().i18n("Fork PDFsam on GitHub")`right);" is 131.
+.,org.pdfsam.ui.dashboard.about,AboutDashboardPane,AboutDashboardPane,Long Statement,The length of the statement "addHyperlink(FontAwesomeIcon.FLAG_ALT`pdfsam.property(TRANSLATE_URL)`DefaultI18nContext.getInstance().i18n("Translate")`right);" is 127.
+.,org.pdfsam.ui.dashboard.about,AboutDashboardPane,AboutDashboardPane,Long Statement,The length of the statement "addHyperlink(FontAwesomeIcon.TWITTER_SQUARE`pdfsam.property(TWITTER_URL)`DefaultI18nContext.getInstance().i18n("Follow us on Twitter")`right);" is 142.
+.,org.pdfsam.ui.dashboard.about,AboutDashboardPane,AboutDashboardPane,Long Statement,The length of the statement "addHyperlink(FontAwesomeIcon.FACEBOOK_SQUARE`pdfsam.property(FACEBOOK_URL)`DefaultI18nContext.getInstance().i18n("Like us on Facebook")`right);" is 143.
+.,org.pdfsam.ui.dashboard.about,AboutDashboardPane,AboutDashboardPane,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.dashboard.about,AboutDashboardPane,AboutDashboardPane,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.dashboard.about,AboutDashboardPaneTest,clickCopy,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.dashboard.about,AboutDashboardPaneTest,clickCopy,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.dashboard,ModulesDashboardItem,priority,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.ui.dashboard,PreferencesDashboardItem,priority,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.dashboard,PreferencesDashboardItem,disabled,Long Identifier,The length of the field PDFSAM_DISABLE_SETTINGS_DEPRECATED is 34.
+.,org.pdfsam.ui.dashboard,QuickbarDashboardButtonsPane,QuickbarDashboardButtonsPane,Long Statement,The length of the statement "items.stream().filter(i -> !i.disabled()).sorted((a`b) -> a.priority() - b.priority()).map(DashboardButton::new).forEach(currentButton -> {" is 139.
+.,org.pdfsam.ui.dashboard,DashboardButtonTest,selectIf,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.dashboard,DashboardTest,allItemsArePicked,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.dashboard,QuickbarDashboardButtonsPaneTest,displayText,Long Statement,The length of the statement "victim.getChildren().stream().filter(n -> n instanceof DashboardButton).map(n -> (DashboardButton)n).noneMatch(DashboardButton::isDisplayText);" is 143.
+.,org.pdfsam.ui.dashboard,QuickbarDashboardButtonsPaneTest,displayText,Long Statement,The length of the statement "victim.getChildren().stream().filter(n -> n instanceof DashboardButton).map(n -> (DashboardButton)n).allMatch(DashboardButton::isDisplayText);" is 142.
+.,org.pdfsam.ui.dashboard,QuickbarDashboardButtonsPaneTest,select,Long Statement,The length of the statement "victim.getChildren().stream().filter(n -> n instanceof DashboardButton).map(n -> (DashboardButton)n).noneMatch(DashboardButton::isSelected);" is 140.
+.,org.pdfsam.ui.dashboard,QuickbarDashboardButtonsPaneTest,select,Long Statement,The length of the statement "long selected=victim.getChildren().stream().filter(n -> n instanceof DashboardButton).map(n -> (DashboardButton)n).filter(DashboardButton::isSelected).count();" is 159.
+.,org.pdfsam.ui.dashboard.modules,DashboardTile,DashboardTile,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.dashboard.modules,ModulesDashboardPane,ModulesDashboardPane,Long Statement,The length of the statement "modules.stream().sorted((a`b) -> a.descriptor().getPriority() - b.descriptor().getPriority()).map(ModulesDashboardTile::new).forEach(modulesPane.getChildren()::add);" is 165.
+.,org.pdfsam.ui.dashboard.modules,ModulesDashboardPane,onPremiumModules,Long Statement,The length of the statement "e.premiumModules.stream().sorted((a`b) -> a.getId() - b.getId()).map(PremiumModuleTile::new).forEach(modulesPane.getChildren()::add);" is 133.
+.,org.pdfsam.ui.dashboard.modules,ModulesDashboardPaneTest,priorityOrder,Long Statement,The length of the statement "ModulesDashboardPane victim=new ModulesDashboardPane(Arrays.asList(new LowPriorityTestModule()`new HighPriorityTestModule()`new DefaultPriorityTestModule()));" is 158.
+.,org.pdfsam.ui.dashboard.modules,ModulesDashboardPaneTest,priorityOrder,Long Statement,The length of the statement "Node title=victim.getChildren().stream().findFirst().orElseThrow(() -> new NullPointerException("Unable to find the expected node")).lookup(".dashboard-modules-tile-title");" is 173.
+.,org.pdfsam.ui.dashboard.preference,PreferenceAppearencePane,PreferenceAppearencePane,Long Statement,The length of the statement "DefaultI18nContext.SUPPORTED_LOCALES.stream().sorted(Comparator.comparing(Locale::getDisplayName)).map(LocaleKeyValueItem::new).forEach(localeCombo.getItems()::add);" is 165.
+.,org.pdfsam.ui.dashboard.preference,PreferenceAppearencePane,PreferenceAppearencePane,Long Statement,The length of the statement "localeCombo.valueProperty().addListener((observable`oldValue`newValue) -> eventStudio().broadcast(new SetLocaleEvent(newValue.getKey())));" is 138.
+.,org.pdfsam.ui.dashboard.preference,PreferenceAppearencePane,PreferenceAppearencePane,Long Statement,The length of the statement "statsPane.add(helpIcon(i18n.i18n("Usage statistics are used to populate the modules quick bar on the left with the most used and most recently used modules."))`1`0);" is 165.
+.,org.pdfsam.ui.dashboard.preference,PreferenceAppearencePane,PreferenceAppearencePane,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.dashboard.preference,PreferenceAppearencePane,PreferenceAppearencePane,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.dashboard.preference,PreferenceAppearencePane,PreferenceAppearencePane,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.dashboard.preference,PreferenceAppearencePane,PreferenceAppearencePane,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.dashboard.preference,PreferenceBehaviorPane,PreferenceBehaviorPane,Long Parameter List,The method has 7 parameters. 
+.,org.pdfsam.ui.dashboard.preference,PreferenceBehaviorPane,PreferenceBehaviorPane,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.dashboard.preference,PreferenceBehaviorPane,PreferenceBehaviorPane,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.dashboard.preference,PreferenceBehaviorPane,PreferenceBehaviorPane,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.dashboard.preference,PreferenceBehaviorPane,PreferenceBehaviorPane,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.dashboard.preference,PreferenceBehaviorPane,PreferenceBehaviorPane,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.dashboard.preference,PreferenceBehaviorPane,PreferenceBehaviorPane,Magic Number,The method contains a magic number: 4
+.,org.pdfsam.ui.dashboard.preference,PreferenceBehaviorPane,PreferenceBehaviorPane,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.dashboard.preference,PreferenceBehaviorPane,PreferenceBehaviorPane,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.dashboard.preference,PreferenceBehaviorPane,PreferenceBehaviorPane,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.dashboard.preference,PreferenceBehaviorPane,PreferenceBehaviorPane,Magic Number,The method contains a magic number: 6
+.,org.pdfsam.ui.dashboard.preference,PreferenceBehaviorPane,PreferenceBehaviorPane,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.dashboard.preference,PreferenceConfig,startupModuleCombo,Long Statement,The length of the statement "PreferenceComboBox<KeyStringValueItem<String>> startupModuleCombo=new PreferenceComboBox<>(StringUserPreference.STARTUP_MODULE`userContext);" is 140.
+.,org.pdfsam.ui.dashboard.preference,PreferenceConfig,startupModuleCombo,Long Statement,The length of the statement "modules.stream().map(ModuleKeyValueItem::new).sorted(Comparator.comparing(ModuleKeyValueItem::getValue)).forEach(startupModuleCombo.getItems()::add);" is 149.
+.,org.pdfsam.ui.dashboard.preference,PreferenceConfig,checkForUpdates,Long Statement,The length of the statement "PreferenceCheckBox checkForUpdates=new PreferenceCheckBox(BooleanUserPreference.CHECK_UPDATES`DefaultI18nContext.getInstance().i18n("Check for updates at startup")`userContext.isCheckForUpdates()`userContext);" is 209.
+.,org.pdfsam.ui.dashboard.preference,PreferenceConfig,checkForUpdates,Long Statement,The length of the statement "checkForUpdates.setGraphic(helpIcon(DefaultI18nContext.getInstance().i18n("Set whether new version availability should be checked on startup (restart needed)")));" is 162.
+.,org.pdfsam.ui.dashboard.preference,PreferenceConfig,checkForNews,Long Statement,The length of the statement "PreferenceCheckBox checkForNews=new PreferenceCheckBox(BooleanUserPreference.CHECK_FOR_NEWS`DefaultI18nContext.getInstance().i18n("Check for news at startup")`userContext.isCheckForNews()`userContext);" is 201.
+.,org.pdfsam.ui.dashboard.preference,PreferenceConfig,checkForNews,Long Statement,The length of the statement "checkForNews.setGraphic(helpIcon(DefaultI18nContext.getInstance().i18n("Set whether the application should check for news availability on startup (restart needed)")));" is 167.
+.,org.pdfsam.ui.dashboard.preference,PreferenceConfig,compressionEnabled,Long Statement,The length of the statement "PreferenceCheckBox compressionEnabled=new PreferenceCheckBox(BooleanUserPreference.PDF_COMPRESSION_ENABLED`DefaultI18nContext.getInstance().i18n("Enabled PDF compression")`userContext.isCompressionEnabled()`userContext);" is 220.
+.,org.pdfsam.ui.dashboard.preference,PreferenceConfig,compressionEnabled,Long Statement,The length of the statement "compressionEnabled.setGraphic(helpIcon(DefaultI18nContext.getInstance().i18n("Set whether \"Compress output file\" should be enabled by default")));" is 148.
+.,org.pdfsam.ui.dashboard.preference,PreferenceConfig,playSounds,Long Statement,The length of the statement "PreferenceCheckBox playSounds=new PreferenceCheckBox(BooleanUserPreference.PLAY_SOUNDS`DefaultI18nContext.getInstance().i18n("Play alert sounds")`userContext.isPlaySounds()`userContext);" is 186.
+.,org.pdfsam.ui.dashboard.preference,PreferenceConfig,savePwdInWorkspace,Long Statement,The length of the statement "PreferenceCheckBox savePwdInWorkspace=new PreferenceCheckBox(BooleanUserPreference.SAVE_PWD_IN_WORKSPACE`DefaultI18nContext.getInstance().i18n("Store passwords when saving a workspace file")`userContext.isSavePwdInWorkspaceFile()`userContext);" is 243.
+.,org.pdfsam.ui.dashboard.preference,PreferenceConfig,savePwdInWorkspace,Long Statement,The length of the statement "savePwdInWorkspace.setGraphic(helpIcon(DefaultI18nContext.getInstance().i18n("If an encrypted PDF document has been opened with a password` save the password in the workspace file")));" is 184.
+.,org.pdfsam.ui.dashboard.preference,PreferenceConfig,donationNotification,Long Statement,The length of the statement "PreferenceCheckBox donationNotification=new PreferenceCheckBox(BooleanUserPreference.DONATION_NOTIFICATION`DefaultI18nContext.getInstance().i18n("Show donation window")`userContext.isDonationNotification()`userContext);" is 219.
+.,org.pdfsam.ui.dashboard.preference,PreferenceConfig,donationNotification,Long Statement,The length of the statement "donationNotification.setGraphic(helpIcon(DefaultI18nContext.getInstance().i18n("Turn on or off the notification appearing once in a while and asking the user to support PDFsam with a donation")));" is 196.
+.,org.pdfsam.ui.dashboard.preference,PreferenceConfig,fetchPremiumModules,Long Statement,The length of the statement "PreferenceCheckBox donationNotification=new PreferenceCheckBox(BooleanUserPreference.PREMIUM_MODULES`DefaultI18nContext.getInstance().i18n("Show premium features")`userContext.isFetchPremiumModules()`userContext);" is 213.
+.,org.pdfsam.ui.dashboard.preference,PreferenceConfig,fetchPremiumModules,Long Statement,The length of the statement "donationNotification.setGraphic(helpIcon(DefaultI18nContext.getInstance().i18n("Set whether the application should fetch and show premium features description in the modules dashboard")));" is 188.
+.,org.pdfsam.ui.dashboard.preference,PreferenceConfig,smartRadio,Long Statement,The length of the statement "PreferenceRadioButton smartRadio=new PreferenceRadioButton(BooleanUserPreference.SMART_OUTPUT`DefaultI18nContext.getInstance().i18n("Use the selected PDF document directory as output directory")`userContext.isUseSmartOutput()`userContext);" is 239.
+.,org.pdfsam.ui.dashboard.preference,PreferenceConfig,workingDirectory,Long Statement,The length of the statement "PreferenceBrowsableDirectoryField workingDirectory=new PreferenceBrowsableDirectoryField(StringUserPreference.WORKING_PATH`userContext);" is 136.
+.,org.pdfsam.ui.dashboard.preference,PreferenceConfig,workspace,Long Statement,The length of the statement "PreferenceBrowsableFileField workspace=new PreferenceBrowsableFileField(StringUserPreference.WORKSPACE_PATH`FileType.JSON`OpenType.OPEN`userContext);" is 149.
+.,org.pdfsam.ui.dashboard.preference,PreferenceConfig,saveWorkspaceOnExit,Long Statement,The length of the statement "PreferenceCheckBox saveWorkspaceOnExit=new PreferenceCheckBox(BooleanUserPreference.SAVE_WORKSPACE_ON_EXIT`DefaultI18nContext.getInstance().i18n("Save default workspace on exit")`userContext.isSaveWorkspaceOnExit()`userContext);" is 228.
+.,org.pdfsam.ui.dashboard.preference,PreferenceConfig,saveWorkspaceOnExit,Long Statement,The length of the statement "saveWorkspaceOnExit.setGraphic(helpIcon(DefaultI18nContext.getInstance().i18n("If a default workspace is set` save it on application exit")));" is 142.
+.,org.pdfsam.ui.dashboard.preference,PreferenceConfig,logViewRowsNumber,Long Statement,The length of the statement "PreferenceIntTextField logRowsNumber=new PreferenceIntTextField(IntUserPreference.LOGVIEW_ROWS_NUMBER`userContext`Validators.positiveInteger());" is 144.
+.,org.pdfsam.ui.dashboard.preference,PreferenceConfig,logViewRowsNumber,Long Statement,The length of the statement "logRowsNumber.setErrorMessage(DefaultI18nContext.getInstance().i18n("Maximum number of rows mast be a positive number"));" is 121.
+.,org.pdfsam.ui.dashboard.preference,PreferenceOutputPane,PreferenceOutputPane,Long Statement,The length of the statement "smartRadio.setGraphic(helpIcon(DefaultI18nContext.getInstance().i18n("Automatically set the destination directory to the selected PDF document directory")));" is 157.
+.,org.pdfsam.ui.dashboard.preference,PreferenceWorkspacePane,PreferenceWorkspacePane,Long Statement,The length of the statement "workingDirectory.getTextField().setPromptText(i18n.i18n("Select a directory where documents will be saved and loaded by default"));" is 131.
+.,org.pdfsam.ui.dashboard.preference,PreferenceWorkspacePane,PreferenceWorkspacePane,Long Statement,The length of the statement "HBox workigDirPane=new HBox(workingDirectory`helpIcon(i18n.i18n("Select a directory where documents will be saved and loaded by default")));" is 140.
+.,org.pdfsam.ui.dashboard.preference,PreferenceWorkspacePane,PreferenceWorkspacePane,Long Statement,The length of the statement "workspace.getTextField().setPromptText(i18n.i18n("Select a previously saved workspace that will be automatically loaded at startup"));" is 134.
+.,org.pdfsam.ui.dashboard.preference,PreferenceWorkspacePane,PreferenceWorkspacePane,Long Statement,The length of the statement "HBox workspaceDirPane=new HBox(workspace`helpIcon(i18n.i18n("Select a previously saved workspace that will be automatically loaded at startup")));" is 146.
+.,org.pdfsam.ui.dashboard.preference,PreferenceWorkspacePane,PreferenceWorkspacePane,Long Statement,The length of the statement "getChildren().addAll(new Label(i18n.i18n("Default working directory:"))`workigDirPane`new Label(i18n.i18n("Load default workspace at startup:"))`workspaceDirPane`saveWorkspaceOnExit`savePwdInWorkspace);" is 202.
+.,org.pdfsam.ui.dashboard.preference,PreferenceAppearencePaneTest,start,Long Statement,The length of the statement "PreferenceComboBox<KeyStringValueItem<String>> startupModuleCombo=new PreferenceComboBox<>(StringUserPreference.STARTUP_MODULE`userContext);" is 140.
+.,org.pdfsam.ui.dashboard.preference,PreferenceBrowsableDirectoryFieldTest,start,Long Statement,The length of the statement "PreferenceBrowsableDirectoryField victim=new PreferenceBrowsableDirectoryField(StringUserPreference.WORKING_PATH`userContext);" is 126.
+.,org.pdfsam.ui.dashboard.preference,PreferenceBrowsableFileFieldTest,start,Long Statement,The length of the statement "PreferenceBrowsableFileField victim=new PreferenceBrowsableFileField(StringUserPreference.WORKING_PATH`FileType.PDF`OpenType.OPEN`userContext);" is 143.
+.,org.pdfsam.ui.dashboard.preference,PreferenceIntTextFieldTest,start,Long Statement,The length of the statement "PreferenceIntTextField victim=new PreferenceIntTextField(IntUserPreference.THUMBNAILS_SIZE`userContext`Validators.positiveInteger());" is 133.
+.,org.pdfsam.ui.dashboard.preference,PreferenceIntTextFieldTest,validValue,Magic Number,The method contains a magic number: 12
+.,org.pdfsam.ui.dashboard.preference,PreferenceOutputPaneTest,start,Long Statement,The length of the statement "PreferenceRadioButton smartRadio=new PreferenceRadioButton(BooleanUserPreference.SMART_OUTPUT`"radio"`false`userContext);" is 121.
+.,org.pdfsam.ui.dashboard.preference,PreferenceOutputPaneTest,start,Long Statement,The length of the statement "PreferenceCheckBox compressionEnabled=new PreferenceCheckBox(BooleanUserPreference.PDF_COMPRESSION_ENABLED`"compression"`true`userContext);" is 139.
+.,org.pdfsam.ui.dashboard.preference,PreferencePaneTest,configOnStartup,Long Statement,The length of the statement "PreferenceComboBox<KeyStringValueItem<String>> startupModuleCombo=(PreferenceComboBox<KeyStringValueItem<String>>)victim.lookup("#startupModuleCombo");" is 151.
+.,org.pdfsam.ui.dashboard.preference,PreferencePaneTest,configOnStartup,Long Statement,The length of the statement "assertEquals("/my/path"`((PreferenceBrowsableDirectoryField)victim.lookup("#workingDirectory")).getTextField().getText());" is 122.
+.,org.pdfsam.ui.dashboard.preference,PreferencePaneTest,configOnStartup,Long Statement,The length of the statement "assertEquals(DefaultI18nContext.getInstance().i18n("Dashboard")`startupModuleCombo.getSelectionModel().getSelectedItem().getValue());" is 133.
+.,org.pdfsam.ui.dashboard.preference,PreferenceRadioButtonTest,start,Long Statement,The length of the statement "Scene scene=new Scene(new HBox(new PreferenceRadioButton(BooleanUserPreference.SMART_OUTPUT`"select"`false`userContext)));" is 122.
+.,org.pdfsam.ui.dashboard.preference,PreferenceSetterOnValidStateTest,changed,Long Statement,The length of the statement "PreferenceSetterOnValidState victim=new PreferenceSetterOnValidState(StringUserPreference.STARTUP_MODULE`new ValidableTextField("testText")`userContext);" is 153.
+.,org.pdfsam.ui.dialog,AddSubdirectoriesConfirmationDialog,AddSubdirectoriesConfirmationDialog,Long Statement,The length of the statement "this.title(getInstance().i18n("Subdirectories")).messageTitle(getInstance().i18n("Subdirectories have been found")).messageContent(getInstance().i18n("Do you want to add PDF files found in subdirectories?"));" is 208.
+.,org.pdfsam.ui.dialog,CreateOutputDirectoryConfirmationDialog,CreateOutputDirectoryConfirmationDialog,Long Statement,The length of the statement "super(styles`DialogStyle.QUESTION`DefaultI18nContext.getInstance().i18n("Yes")`DefaultI18nContext.getInstance().i18n("No"));" is 124.
+.,org.pdfsam.ui.dialog,CreateOutputDirectoryConfirmationDialog,CreateOutputDirectoryConfirmationDialog,Long Statement,The length of the statement "this.title(DefaultI18nContext.getInstance().i18n("Non existing directory")).messageTitle(DefaultI18nContext.getInstance().i18n("The selected output directory does not exist")).messageContent(DefaultI18nContext.getInstance().i18n("Do you want to create it?"));" is 259.
+.,org.pdfsam.ui.dialog,LenientExecutionConfirmationDialog,LenientExecutionConfirmationDialog,Long Statement,The length of the statement "super(styles`DialogStyle.QUESTION`DefaultI18nContext.getInstance().i18n("Yes")`DefaultI18nContext.getInstance().i18n("No"));" is 124.
+.,org.pdfsam.ui.dialog,LenientExecutionConfirmationDialog,LenientExecutionConfirmationDialog,Long Statement,The length of the statement "this.title(DefaultI18nContext.getInstance().i18n("Task failed")).messageTitle(DefaultI18nContext.getInstance().i18n("PDFsam can try to overcome the failure")).messageContent(DefaultI18nContext.getInstance().i18n("It may result in PDF files with partial or missing data` proceed anyway?"));" is 289.
+.,org.pdfsam.ui.dialog,OpenWithDialog,OpenWithDialog,Magic Number,The method contains a magic number: 150
+.,org.pdfsam.ui.dialog,OpenWithDialog,initFor,Magic Number,The method contains a magic number: 0.7
+.,org.pdfsam.ui.dialog,OpenWithDialog,initFor,Magic Number,The method contains a magic number: 0.7
+.,org.pdfsam.ui.dialog,OverwriteConfirmationDialog,OverwriteConfirmationDialog,Long Statement,The length of the statement "super(styles`DialogStyle.WARNING`DefaultI18nContext.getInstance().i18n("Overwrite")`DefaultI18nContext.getInstance().i18n("Cancel"));" is 133.
+.,org.pdfsam.ui.dialog,OverwriteDialogController,onDirectory,Long Statement,The length of the statement "if (!dialog.get().title(DefaultI18nContext.getInstance().i18n("Directory not empty")).messageTitle(DefaultI18nContext.getInstance().i18n("The selected directory is not empty")).messageContent(DefaultI18nContext.getInstance().i18n("Overwrite files with the same name as the generated ones?")).response()) {" is 305.
+.,org.pdfsam.ui.dialog,OverwriteDialogController,onFile,Long Statement,The length of the statement "if (!dialog.get().title(DefaultI18nContext.getInstance().i18n("Overwrite confirmation")).messageTitle(DefaultI18nContext.getInstance().i18n("A file with the given name already exists")).messageContent(DefaultI18nContext.getInstance().i18n("Do you want to overwrite it?")).response()) {" is 285.
+.,org.pdfsam.ui.dialog,CreateOutputDirectoryConfirmationDialogTest,contentIsShown,Long Statement,The length of the statement "assertTrue(lookup(DefaultI18nContext.getInstance().i18n("The selected output directory does not exist")).tryQuery().isPresent());" is 129.
+.,org.pdfsam.ui.dialog,LenientExecutionConfirmationDialogTest,contentIsShown,Long Statement,The length of the statement "assertTrue(lookup(DefaultI18nContext.getInstance().i18n("PDFsam can try to overcome the failure")).tryQuery().isPresent());" is 123.
+.,org.pdfsam.ui.dialog,LenientExecutionConfirmationDialogTest,contentIsShown,Long Statement,The length of the statement "assertTrue(lookup(DefaultI18nContext.getInstance().i18n("It may result in PDF files with partial or missing data` proceed anyway?")).tryQuery().isPresent());" is 157.
+.,org.pdfsam.ui.dialog,LenientTaskExecutionDialogControllerTest,negativeNoLatestTest,Long Statement,The length of the statement "TaskExecutionFailedEvent failure=new TaskExecutionFailedEvent(new TaskNonLenientExecutionException(new IOException())`null);" is 124.
+.,org.pdfsam.ui.dialog,LenientTaskExecutionDialogControllerTest,negativeNoTest,Long Statement,The length of the statement "TaskExecutionFailedEvent failure=new TaskExecutionFailedEvent(new TaskNonLenientExecutionException(new IOException())`null);" is 124.
+.,org.pdfsam.ui.dialog,LenientTaskExecutionDialogControllerTest,positiveTest,Long Statement,The length of the statement "TaskExecutionFailedEvent failure=new TaskExecutionFailedEvent(new TaskNonLenientExecutionException(new IOException())`null);" is 124.
+.,org.pdfsam.ui.dialog,OverwriteConfirmationDialogTest,start,Long Statement,The length of the statement "button.setOnAction(a -> overwrite=victim.title("Title").messageTitle("MessageTitle").messageContent("MessageContent").response());" is 130.
+.,org.pdfsam.ui.dnd,MultipleFilesDropController,request,Complex Conditional,The conditional expression event.files.size() == 1 && !event.files.get(0).isDirectory() && (FileType.TXT.matches(event.files.get(0).getName()) || FileType.CSV.matches(event.files.get(0).getName())) is complex.
+.,org.pdfsam.ui.dnd,MultipleFilesDropController,request,Long Statement,The length of the statement "if (event.files.size() == 1 && !event.files.get(0).isDirectory() && (FileType.TXT.matches(event.files.get(0).getName()) || FileType.CSV.matches(event.files.get(0).getName()))) {" is 177.
+.,org.pdfsam.ui.dnd,MultipleFilesDropController,request,Long Statement,The length of the statement "getFiles(event.files).filter(f -> FileType.PDF.matches(f.getName())).map(PdfDocumentDescriptor::newDescriptorNoPassword).forEach(loadEvent::add);" is 145.
+.,org.pdfsam.ui.dnd,MultipleFilesDropController,request,Long Statement,The length of the statement "eventStudio().broadcast(new AddNotificationRequestEvent(NotificationType.WARN`DefaultI18nContext.getInstance().i18n("Drag and drop PDF files or directories containing PDF files")`DefaultI18nContext.getInstance().i18n("No PDF found")));" is 235.
+.,org.pdfsam.ui.dnd,SingleFileDropController,request,Long Statement,The length of the statement "event.files.stream().filter(f -> FileType.PDF.matches(f.getName())).filter(File::isFile).map(PdfDocumentDescriptor::newDescriptorNoPassword).findFirst().ifPresent(file -> {" is 172.
+.,org.pdfsam.ui.info,BaseInfoTab,BaseInfoTab,Magic Number,The method contains a magic number: 25
+.,org.pdfsam.ui.info,BaseInfoTab,BaseInfoTab,Magic Number,The method contains a magic number: 75
+.,org.pdfsam.ui.info,SummaryTab,SummaryTab,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.info,SummaryTab,SummaryTab,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.info,SummaryTab,SummaryTab,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.info,SummaryTab,SummaryTab,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.ui.info,SummaryTab,SummaryTab,Magic Number,The method contains a magic number: 4
+.,org.pdfsam.ui.info,SummaryTab,SummaryTab,Magic Number,The method contains a magic number: 4
+.,org.pdfsam.ui.info,SummaryTab,SummaryTab,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.info,SummaryTab,SummaryTab,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.info,SummaryTab,SummaryTab,Magic Number,The method contains a magic number: 6
+.,org.pdfsam.ui.info,SummaryTab,SummaryTab,Magic Number,The method contains a magic number: 6
+.,org.pdfsam.ui.info,SummaryTab,SummaryTab,Magic Number,The method contains a magic number: 7
+.,org.pdfsam.ui.info,SummaryTab,SummaryTab,Magic Number,The method contains a magic number: 7
+.,org.pdfsam.ui.info,SummaryTab,SummaryTab,Magic Number,The method contains a magic number: 8
+.,org.pdfsam.ui.info,SummaryTab,SummaryTab,Magic Number,The method contains a magic number: 8
+.,org.pdfsam.ui.info,SummaryTab,SummaryTab,Magic Number,The method contains a magic number: 9
+.,org.pdfsam.ui.info,SummaryTab,SummaryTab,Magic Number,The method contains a magic number: 9
+.,org.pdfsam.ui.info,SummaryTab,SummaryTab,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.ui.info,SummaryTab,SummaryTab,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.ui.info,InfoStageTest,show,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.info,KeywordsTabTest,showRequest,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.info,KeywordsTabTest,showRequest,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.info,KeywordsTabTest,onLoad,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.info,KeywordsTabTest,onLoad,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.info,SummaryTabTest,showRequest,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.info,SummaryTabTest,onLoad,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.info,SummaryTabTest,fillDescriptor,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.info,SummaryTabTest,assertInfoIsDisplayed,Long Statement,The length of the statement "List<String> values=Arrays.asList("test.producer"`file.getAbsolutePath()`descriptor.getVersionString()`"2"`"test.creationDate"`"test.title"`"test.author"`"test.creator"`"test.subject"`FileUtils.byteCountToDisplaySize(file.length())`FORMATTER.format(file.lastModified()));" is 271.
+.,org.pdfsam.ui.info,SummaryTabTest,assertInfoIsDisplayed,Long Statement,The length of the statement "listeners.forEach(l -> verify(l`timeout(2000).times(1)).changed(any(ObservableValue.class)`anyString()`argThat(isIn(values))));" is 127.
+.,org.pdfsam.ui.info,SummaryTabTest,assertInfoIsDisplayed,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.log,LogListView,scrollToBottomIfShowing,Long Statement,The length of the statement "if (!getItems().isEmpty() && ofNullable(this.getScene()).map(Scene::getWindow).map(Window::isShowing).orElse(Boolean.TRUE)) {" is 125.
+.,org.pdfsam.ui.log,LogPane,saveLog,Long Statement,The length of the statement "RememberingLatestFileChooserWrapper fileChooser=FileChoosers.getFileChooser(DefaultI18nContext.getInstance().i18n("Select where to save the log file")`FileType.LOG);" is 165.
+.,org.pdfsam.ui.log,LogListViewTest,append,Magic Number,The method contains a magic number: 200
+.,org.pdfsam.ui.log,LogListViewTest,append,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.log,LogListViewTest,append,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.log,LogListViewTest,append,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.log,LogListViewTest,append,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.log,LogListViewTest,appendSizeConstraint,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.log,LogListViewTest,appendSizeConstraint,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.log,LogListViewTest,appendSizeConstraint,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.log,LogListViewTest,appendSizeConstraint,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.log,LogListViewTest,appendSizeConstraint,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.log,LogListViewTest,maxNumberOfLogRowsChanged,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.log,LogListViewTest,maxNumberOfLogRowsChanged,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.ui.log,LogListViewTest,maxNumberOfLogRowsChanged,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.log,LogListViewTest,maxNumberOfLogRowsChanged,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.log,LogListViewTest,maxNumberOfLogRowsChanged,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.log,LogListViewTest,maxNumberOfLogRowsChanged,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.log,LogListViewTest,maxNumberOfLogRowsChanged,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.log,LogListViewTest,maxNumberOfLogRowsChanged,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.log,LogMessageBroadcasterTest,eventOnError,Magic Number,The method contains a magic number: 1000
+.,org.pdfsam.ui.log,LogPaneTest,context,Magic Number,The method contains a magic number: 200
+.,org.pdfsam.ui.log,LogPaneTest,clear,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.log,LogPaneTest,copy,Long Statement,The length of the statement "WaitForAsyncUtils.waitForAsyncFx(2000`() -> assertTrue(Clipboard.getSystemClipboard().getString().contains("A message")));" is 122.
+.,org.pdfsam.ui.log,LogPaneTest,copy,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.log,LogPaneTest,copy,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.ui.log,LogPaneTest,selectAll,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.ui.log,Config,context,Magic Number,The method contains a magic number: 200
+.,org.pdfsam.ui.news,News,News,Long Statement,The length of the statement "Label labelDate=new Label(FORMATTER.format(data.getDate())`MaterialDesignIconFactory.get().createIcon(MaterialDesignIcon.CLOCK));" is 129.
+.,org.pdfsam.ui.quickbar,ExpandButton,ExpandButton,Magic Number,The method contains a magic number: 7
+.,org.pdfsam.ui.quickbar,ExpandButton,ExpandButton,Magic Number,The method contains a magic number: 7
+.,org.pdfsam.ui.workarea,QuickbarModuleButtonsPaneTest,onSetCurrentModuleRequest,Long Statement,The length of the statement "assertTrue(buttons.stream().filter(ModuleButton::isSelected).allMatch(m -> m.moduleId().equals(DefaultPriorityTestModule.ID)));" is 127.
+.,org.pdfsam.ui.workarea,QuickbarModuleButtonsPaneTest,onSetCurrentModuleRequest,Long Statement,The length of the statement "assertTrue(buttons.stream().filter(m -> !m.moduleId().equals(DefaultPriorityTestModule.ID)).noneMatch(ModuleButton::isSelected));" is 129.
+.,org.pdfsam.i18n,DefaultI18nContext,refresh,Long Statement,The length of the statement "Optional.ofNullable(Locale.forLanguageTag(localeString)).filter(SUPPORTED_LOCALES::contains).ifPresent(Locale::setDefault);" is 123.
+.,org.pdfsam.merge,MergeModule,settingPanel,Long Statement,The length of the statement "pane.getChildren().addAll(selectionPane`titledPane(DefaultI18nContext.getInstance().i18n("Merge settings")`mergeOptions)`titledPane(DefaultI18nContext.getInstance().i18n("Destination file")`destinationPane));" is 208.
+.,org.pdfsam.merge,MergeOptionsPane,MergeOptionsPane,Long Statement,The length of the statement "blankIfOdd.setGraphic(helpIcon(i18n.i18n("Adds a blank page after each merged document if the document has an odd number of pages")));" is 134.
+.,org.pdfsam.merge,MergeOptionsPane,MergeOptionsPane,Long Statement,The length of the statement "acroForms.getItems().add(keyValue(AcroFormPolicy.MERGE_RENAMING_EXISTING_FIELDS`i18n.i18n("Merge renaming existing fields")));" is 126.
+.,org.pdfsam.merge,MergeOptionsPane,MergeOptionsPane,Long Statement,The length of the statement "outline.getItems().add(keyValue(OutlinePolicy.ONE_ENTRY_EACH_DOC`i18n.i18n("Create one entry for each merged document")));" is 122.
+.,org.pdfsam.merge,MergeOptionsPane,MergeOptionsPane,Long Statement,The length of the statement "outline.getItems().add(keyValue(OutlinePolicy.RETAIN_AS_ONE_ENTRY`i18n.i18n("Retain bookmarks as one entry for each merged document")));" is 136.
+.,org.pdfsam.merge,MergeOptionsPane,MergeOptionsPane,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.merge,MergeOptionsPane,MergeOptionsPane,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.merge,MergeOptionsPane,MergeOptionsPane,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.merge,MergeOptionsPane,MergeOptionsPane,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.merge,MergeOptionsPane,MergeOptionsPane,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.merge,MergeOptionsPane,MergeOptionsPane,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.merge,MergeOptionsPane,MergeOptionsPane,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.merge,MergeOptionsPane,saveStateTo,Long Statement,The length of the statement "data.put("outline"`Optional.ofNullable(outline.getSelectionModel().getSelectedItem()).map(i -> i.getKey().toString()).orElse(EMPTY));" is 133.
+.,org.pdfsam.merge,MergeOptionsPane,saveStateTo,Long Statement,The length of the statement "data.put("acroForms"`Optional.ofNullable(acroForms.getSelectionModel().getSelectedItem()).map(i -> i.getKey().toString()).orElse(EMPTY));" is 137.
+.,org.pdfsam.merge,MergeOptionsPane,saveStateTo,Long Statement,The length of the statement "data.put("toc"`Optional.ofNullable(toc.getSelectionModel().getSelectedItem()).map(i -> i.getKey().toString()).orElse(EMPTY));" is 125.
+.,org.pdfsam.merge,MergeOptionsPane,restoreStateFrom,Long Statement,The length of the statement "Optional.ofNullable(data.get("outline")).map(OutlinePolicy::valueOf).map(r -> keyEmptyValue(r)).ifPresent(r -> this.outline.getSelectionModel().select(r));" is 155.
+.,org.pdfsam.merge,MergeOptionsPane,restoreStateFrom,Long Statement,The length of the statement "Optional.ofNullable(data.get("acroForms")).map(AcroFormPolicy::valueOf).map(r -> keyEmptyValue(r)).ifPresent(r -> this.acroForms.getSelectionModel().select(r));" is 160.
+.,org.pdfsam.merge,MergeOptionsPane,restoreStateFrom,Long Statement,The length of the statement "Optional.ofNullable(data.get("toc")).map(ToCPolicy::valueOf).map(r -> keyEmptyValue(r)).ifPresent(r -> this.toc.getSelectionModel().select(r));" is 143.
+.,org.pdfsam.merge,MergeSelectionPane,MergeSelectionPane,Long Statement,The length of the statement "super(ownerModule`true`true`new SelectionTableColumn<?>[]{new LoadingColumn(ownerModule)`FileColumn.NAME`LongColumn.SIZE`IntColumn.PAGES`LongColumn.LAST_MODIFIED`new PageRangesColumn(DefaultI18nContext.getInstance().i18n("Double click to set pages you want to merge (ex: 2 or 5-23 or 2`5-7`12-)"))});" is 300.
+.,org.pdfsam.merge,MergeSelectionPane,apply,Long Statement,The length of the statement "table().getItems().stream().filter(s -> !Objects.equals("0"`trim(s.pageSelection.get()))).map(i -> new PdfMergeInput(i.descriptor().toPdfFileSource()`i.toPageRangeSet())).forEach(builder::addInput);" is 198.
+.,org.pdfsam.merge,MergeOptionsPaneTest,restoreStateFrom,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.merge,MergeOptionsPaneTest,reset,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.merge,MergeOptionsPaneTest,reset,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.merge,MergeSelectionPaneTest,notEmptyPageSelection,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.rotate,RotateModule,settingPanel,Long Statement,The length of the statement "pane.getChildren().addAll(selectionPane`options`Views.titledPane(DefaultI18nContext.getInstance().i18n("Output settings")`destinationPane)`prefixTitled);" is 153.
+.,org.pdfsam.rotate,RotateOptionsPane,RotateOptionsPane,Long Statement,The length of the statement "this.rotationType.getItems().add(keyValue(PredefinedSetOfPages.ALL_PAGES`DefaultI18nContext.getInstance().i18n("All pages")));" is 126.
+.,org.pdfsam.rotate,RotateOptionsPane,RotateOptionsPane,Long Statement,The length of the statement "this.rotationType.getItems().add(keyValue(PredefinedSetOfPages.EVEN_PAGES`DefaultI18nContext.getInstance().i18n("Even pages")));" is 128.
+.,org.pdfsam.rotate,RotateOptionsPane,RotateOptionsPane,Long Statement,The length of the statement "this.rotationType.getItems().add(keyValue(PredefinedSetOfPages.ODD_PAGES`DefaultI18nContext.getInstance().i18n("Odd pages")));" is 126.
+.,org.pdfsam.rotate,RotateOptionsPane,RotateOptionsPane,Long Statement,The length of the statement "this.rotation.getItems().add(keyValue(Rotation.DEGREES_90`DefaultI18nContext.getInstance().i18n("90 degrees clockwise")));" is 122.
+.,org.pdfsam.rotate,RotateOptionsPane,RotateOptionsPane,Long Statement,The length of the statement "this.rotation.getItems().add(keyValue(Rotation.DEGREES_180`DefaultI18nContext.getInstance().i18n("180 degrees clockwise")));" is 124.
+.,org.pdfsam.rotate,RotateOptionsPane,RotateOptionsPane,Long Statement,The length of the statement "this.rotation.getItems().add(keyValue(Rotation.DEGREES_270`DefaultI18nContext.getInstance().i18n("90 degrees counterclockwise")));" is 130.
+.,org.pdfsam.rotate,RotateOptionsPane,saveStateTo,Long Statement,The length of the statement "data.put("rotation"`Optional.ofNullable(rotation.getSelectionModel().getSelectedItem()).map(i -> i.getKey().toString()).orElse(EMPTY));" is 135.
+.,org.pdfsam.rotate,RotateOptionsPane,saveStateTo,Long Statement,The length of the statement "data.put("rotationType"`Optional.ofNullable(rotationType.getSelectionModel().getSelectedItem()).map(i -> i.getKey().toString()).orElse(EMPTY));" is 143.
+.,org.pdfsam.rotate,RotateOptionsPane,restoreStateFrom,Long Statement,The length of the statement "Optional.ofNullable(data.get("rotation")).map(Rotation::valueOf).map(r -> keyEmptyValue(r)).ifPresent(r -> this.rotation.getSelectionModel().select(r));" is 152.
+.,org.pdfsam.rotate,RotateOptionsPane,restoreStateFrom,Long Statement,The length of the statement "Optional.ofNullable(data.get("rotationType")).map(PredefinedSetOfPages::valueOf).map(r -> keyEmptyValue(r)).ifPresent(r -> this.rotationType.getSelectionModel().select(r));" is 172.
+.,org.pdfsam.rotate,RotateParametersBuilder,addInput,Complex Method,Cyclomatic complexity of the method is 10
+.,org.pdfsam.rotate,RotateParametersBuilder,addInput,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.rotate,RotateParametersBuilder,addInput,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.rotate,RotateParametersBuilder,addInput,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.rotate,RotateParametersBuilder,addInput,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.rotate,RotateParametersBuilder,addInput,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.rotate,RotateParametersBuilder,addInput,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.rotate,RotateParametersBuilder,addInput,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.rotate,RotateParametersBuilder,addInput,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.rotate,RotateSelectionPane,RotateSelectionPane,Long Statement,The length of the statement "super(ownerModule`false`false`new SelectionTableColumn<?>[]{new LoadingColumn(ownerModule)`FileColumn.NAME`LongColumn.SIZE`IntColumn.PAGES`LongColumn.LAST_MODIFIED`new PageRangesColumn(DefaultI18nContext.getInstance().i18n("Double click to set pages you want to rotate (ex: 2 or 5-23 or 2`5-7`12-)"))});" is 303.
+.,org.pdfsam.rotate,RotateSelectionPane,apply,Long Statement,The length of the statement "table().getItems().stream().filter(s -> !Objects.equals("0"`trim(s.pageSelection.get()))).forEach(i -> builder.addInput(i.descriptor().toPdfFileSource()`i.toPageRangeSet()));" is 174.
+.,org.pdfsam.rotate,RotateOptionsPaneTest,restoreStateFrom,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.rotate,RotateOptionsPaneTest,reset,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.rotate,RotateOptionsPaneTest,reset,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.rotate,RotateParametersBuilderTest,buildDefaultSelection,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.rotate,RotateParametersBuilderTest,buildDefaultSelection,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.rotate,RotateParametersBuilderTest,buildRanges,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.rotate,RotateParametersBuilderTest,buildRanges,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.rotate,RotateParametersBuilderTest,buildRanges,Magic Number,The method contains a magic number: 4
+.,org.pdfsam.rotate,RotateParametersBuilderTest,buildRanges,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.rotate,RotateParametersBuilderTest,buildMultiple,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.rotate,RotateParametersBuilderTest,buildMultiple,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.rotate,RotateParametersBuilderTest,buildMultiple,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.rotate,RotateSelectionPaneTest,notEmptyPageSelection,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.split,SplitAfterPredefinedSetOfPagesRadioButton,restoreStateFrom,Long Statement,The length of the statement "Optional.ofNullable(data.get("splitAfterPredefined.combo")).map(PredefinedSetOfPages::valueOf).map(KeyStringValueItem::keyEmptyValue).ifPresent(this.combo.getSelectionModel()::select);" is 184.
+.,org.pdfsam.split,SplitModule,SplitModule,Long Statement,The length of the statement "this.selectionPane.setPromptText(DefaultI18nContext.getInstance().i18n("Select or drag and drop the PDF you want to split"));" is 125.
+.,org.pdfsam.split,SplitModule,getBuilder,Long Statement,The length of the statement "Optional<SinglePdfSourceMultipleOutputParametersBuilder<? extends AbstractSplitByPageParameters>> builder=Optional.ofNullable(splitOptions.getBuilder(onError));" is 160.
+.,org.pdfsam.split,SplitModule,settingPanel,Long Statement,The length of the statement "pane.getChildren().addAll(selectionPane`Views.titledPane(DefaultI18nContext.getInstance().i18n("Split settings")`splitOptions)`Views.titledPane(DefaultI18nContext.getInstance().i18n("Output settings")`destinationPane)`prefixTitled);" is 232.
+.,org.pdfsam.split,SplitOptionsPane,SplitOptionsPane,Long Statement,The length of the statement "predefinedCombo.getItems().add(KeyStringValueItem.keyValue(PredefinedSetOfPages.ALL_PAGES`DefaultI18nContext.getInstance().i18n("Every page")));" is 144.
+.,org.pdfsam.split,SplitOptionsPane,SplitOptionsPane,Long Statement,The length of the statement "predefinedCombo.getItems().add(KeyStringValueItem.keyValue(PredefinedSetOfPages.EVEN_PAGES`DefaultI18nContext.getInstance().i18n("Even pages")));" is 145.
+.,org.pdfsam.split,SplitOptionsPane,SplitOptionsPane,Long Statement,The length of the statement "predefinedCombo.getItems().add(KeyStringValueItem.keyValue(PredefinedSetOfPages.ODD_PAGES`DefaultI18nContext.getInstance().i18n("Odd pages")));" is 143.
+.,org.pdfsam.split,SplitOptionsPane,SplitOptionsPane,Long Statement,The length of the statement "grid.addRow(splitAfterPredefined`predefinedCombo`helpIcon(DefaultI18nContext.getInstance().i18n("Split the document after the given page numbers")));" is 149.
+.,org.pdfsam.split,SplitOptionsPane,SplitOptionsPane,Long Statement,The length of the statement "grid.addRow(splitAfter`splitAfterField`helpIcon(DefaultI18nContext.getInstance().i18n("Split the document after the given page numbers")));" is 139.
+.,org.pdfsam.split,SplitOptionsPane,SplitOptionsPane,Long Statement,The length of the statement "grid.addRow(splitByEvery`splitByEveryField`helpIcon(DefaultI18nContext.getInstance().i18n("Splits the PDF every \"n\" pages creating documents of \"n\" pages each")));" is 167.
+.,org.pdfsam.split,SplitAfterPredefinedSetOfPagesRadioButtonTest,builder,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.split,SplitAfterPredefinedSetOfPagesRadioButtonTest,builder,Magic Number,The method contains a magic number: 6
+.,org.pdfsam.split,SplitAfterPredefinedSetOfPagesRadioButtonTest,builder,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.split,SplitAfterPredefinedSetOfPagesRadioButtonTest,builder,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.split,SplitAfterPredefinedSetOfPagesRadioButtonTest,builder,Magic Number,The method contains a magic number: 6
+.,org.pdfsam.split,SplitAfterPredefinedSetOfPagesRadioButtonTest,builder,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.split,SplitAfterPredefinedSetOfPagesRadioButtonTest,builder,Magic Number,The method contains a magic number: 4
+.,org.pdfsam.split,SplitAfterPredefinedSetOfPagesRadioButtonTest,builder,Magic Number,The method contains a magic number: 6
+.,org.pdfsam.split,SplitAfterPredefinedSetOfPagesRadioButtonTest,builderDisabledOptimization,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.split,SplitAfterPredefinedSetOfPagesRadioButtonTest,saveStateSelected,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.split,SplitAfterPredefinedSetOfPagesRadioButtonTest,saveStateNotSelected,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.split,SplitAfterPredefinedSetOfPagesRadioButtonTest,restoreState,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.split,SplitAfterPredefinedSetOfPagesRadioButtonTest,reset,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.split,SplitAfterRadioButtonTest,builder,Magic Number,The method contains a magic number: 20
+.,org.pdfsam.split,SplitAfterRadioButtonTest,builder,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.split,SplitAfterRadioButtonTest,reset,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.split,SplitByEveryRadioButtonTest,invalidMaxPage,Magic Number,The method contains a magic number: 10
+.,org.pdfsam.split,SplitByEveryRadioButtonTest,builder,Magic Number,The method contains a magic number: 20
+.,org.pdfsam.split,SplitByEveryRadioButtonTest,builder,Magic Number,The method contains a magic number: 6
+.,org.pdfsam.split,SplitByEveryRadioButtonTest,builder,Magic Number,The method contains a magic number: 12
+.,org.pdfsam.split,SplitByEveryRadioButtonTest,builder,Magic Number,The method contains a magic number: 18
+.,org.pdfsam.split,SplitByEveryRadioButtonTest,reset,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.splitbybookmarks,BookmarksLevelComboBox,restoreStateFrom,Long Statement,The length of the statement "Arrays.stream(ofNullable(data.get("levelCombo.levels")).map(l -> l.split("`")).orElse(new String[0])).forEach(getItems()::add);" is 127.
+.,org.pdfsam.splitbybookmarks,SplitByBookmarksModule,SplitByBookmarksModule,Long Statement,The length of the statement "this.selectionPane.setPromptText(DefaultI18nContext.getInstance().i18n("Select or drag and drop the PDF you want to split"));" is 125.
+.,org.pdfsam.splitbybookmarks,SplitByBookmarksModule,settingPanel,Long Statement,The length of the statement "pane.getChildren().addAll(selectionPane`Views.titledPane(DefaultI18nContext.getInstance().i18n("Split settings")`splitOptions)`Views.titledPane(DefaultI18nContext.getInstance().i18n("Output settings")`destinationPane)`prefixTitled);" is 232.
+.,org.pdfsam.splitbybookmarks,SplitOptionsPane,SplitOptionsPane,Long Statement,The length of the statement "getChildren().addAll(createLine(new Label(ctx.i18n("Split at this bookmark level:"))`levelCombo)`createLine(new Label(ctx.i18n("Matching regular expression:"))`regexpField`helpIcon(new TextFlow(new Text(ctx.i18n("A regular expression the bookmark text has to match") + System.lineSeparator())`new Text(ctx.i18n("Example: use .*Chapter.* to match bookmarks containing the word \"Chapter\""))))));" is 395.
+.,org.pdfsam.splitbybookmarks,SplitOptionsPane,SplitOptionsPane,Magic Number,The method contains a magic number: 350
+.,org.pdfsam.splitbybookmarks,BookmarksLevelComboBoxTest,validateOnChange,Magic Number,The method contains a magic number: 300
+.,org.pdfsam.splitbybookmarks,BookmarksLevelComboBoxTest,validApply,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.splitbybookmarks,BookmarksLevelComboBoxTest,saveState,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.splitbybookmarks,BookmarksLevelComboBoxTest,saveStateEmptySelection,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.splitbybookmarks,BookmarksLevelComboBoxTest,restoreState,Magic Number,The method contains a magic number: 40
+.,org.pdfsam.splitbybookmarks,BookmarksLevelComboBoxTest,restoreState,Magic Number,The method contains a magic number: 50
+.,org.pdfsam.splitbybookmarks,BookmarksLevelComboBoxTest,restoreState,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.splitbybookmarks,BookmarksLevelComboBoxTest,reset,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.splitbybookmarks,BookmarksLevelComboBoxTest,restoreStateBackwardCompatible,Magic Number,The method contains a magic number: 40
+.,org.pdfsam.splitbybookmarks,BookmarksLevelComboBoxTest,restoreStateBackwardCompatible,Magic Number,The method contains a magic number: 50
+.,org.pdfsam.splitbybookmarks,BookmarksLevelComboBoxTest,restoreStateBackwardCompatible,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.splitbybookmarks,BookmarksLevelComboBoxTest,restoreStateEmptySelected,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.splitbybookmarks,BookmarksLevelComboBoxTest,restoreStateNullSelected,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.splitbybookmarks,SplitByOutlineLevelParametersBuilderTest,build,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.splitbybookmarks,SplitByOutlineLevelParametersBuilderTest,build,Magic Number,The method contains a magic number: 2
+.,org.pdfsam.splitbybookmarks,SplitOptionsPaneTest,applyLevel,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.splitbybookmarks,SplitOptionsPaneTest,applyRegexp,Magic Number,The method contains a magic number: 3
+.,org.pdfsam.splitbybookmarks,SplitOptionsPaneTest,restoreState,Magic Number,The method contains a magic number: 6
+.,org.pdfsam.splitbybookmarks,SplitOptionsPaneTest,reset,Magic Number,The method contains a magic number: 2000
+.,org.pdfsam.splitbysize,SplitBySizeModule,SplitBySizeModule,Long Statement,The length of the statement "this.selectionPane.setPromptText(DefaultI18nContext.getInstance().i18n("Select or drag and drop the PDF you want to split"));" is 125.
+.,org.pdfsam.splitbysize,SplitBySizeModule,settingPanel,Long Statement,The length of the statement "pane.getChildren().addAll(selectionPane`Views.titledPane(DefaultI18nContext.getInstance().i18n("Split settings")`splitOptions)`Views.titledPane(DefaultI18nContext.getInstance().i18n("Output settings")`destinationPane)`prefixTitled);" is 232.
+.,org.pdfsam.splitbysize,SizeUnitTest,toBytes,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.splitbysize,SizeUnitTest,toBytes,Magic Number,The method contains a magic number: 1024
+.,org.pdfsam.splitbysize,SizeUnitTest,toBytes,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.splitbysize,SizeUnitTest,toBytes,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.splitbysize,SizeUnitTest,toBytes,Magic Number,The method contains a magic number: 1024
+.,org.pdfsam.splitbysize,SizeUnitTest,toBytes,Magic Number,The method contains a magic number: 1024
+.,org.pdfsam.splitbysize,SizeUnitTest,toBytes,Magic Number,The method contains a magic number: 5
+.,org.pdfsam.splitbysize,SplitBySizeParametersBuilderTest,build,Magic Number,The method contains a magic number: 120l
+.,org.pdfsam.splitbysize,SplitBySizeParametersBuilderTest,build,Magic Number,The method contains a magic number: 120l
+.,org.pdfsam.splitbysize,SplitOptionsPaneTest,apply,Magic Number,The method contains a magic number: 30
+.,org.pdfsam.splitbysize,SplitOptionsPaneTest,apply,Magic Number,The method contains a magic number: 1024
+.,org.pdfsam.splitbysize,SplitOptionsPaneTest,apply,Magic Number,The method contains a magic number: 1024L
+.,org.pdfsam.splitbysize,SplitOptionsPaneTest,reset,Magic Number,The method contains a magic number: 2000
