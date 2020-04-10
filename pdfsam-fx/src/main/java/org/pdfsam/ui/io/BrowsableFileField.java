@@ -84,12 +84,17 @@ public class BrowsableFileField extends BrowsableField {
      * @param allowEmptyString
      */
     public void enforceValidation(boolean selectedFileMustExists, boolean allowEmptyString) {
+        Validator<String> validator = getStringValidator(selectedFileMustExists, allowEmptyString);
+        getTextField().setValidator(validator);
+        getTextField().setErrorMessage(buildErrorMessage(selectedFileMustExists));
+    }
+
+    private Validator<String> getStringValidator(boolean selectedFileMustExists, boolean allowEmptyString) {
         Validator<String> validator = Validators.fileType(fileType, selectedFileMustExists);
         if (allowEmptyString) {
             validator = Validators.validEmpty(validator);
         }
-        getTextField().setValidator(validator);
-        getTextField().setErrorMessage(buildErrorMessage(selectedFileMustExists));
+        return validator;
     }
 
     private String buildErrorMessage(boolean selectedFileMustExists) {
