@@ -1,11 +1,11 @@
-/* 
+/*
  * This file is part of the PDF Split And Merge source code
  * Created on 08/mag/2014
  * Copyright 2017 by Sober Lemur S.a.s. di Vacondio Andrea (info@pdfsam.org).
  *
  * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License as 
- * published by the Free Software Foundation, either version 3 of the 
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
  * License, or (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -18,46 +18,34 @@
  */
 package org.pdfsam.module;
 
-import static org.sejda.commons.util.RequireUtils.requireNotBlank;
-import static org.sejda.commons.util.RequireUtils.requireNotNullArg;
-
 /**
  * Builder for the {@link ModuleDescriptor}
- * 
- * @author Andrea Vacondio
  *
+ * @author Andrea Vacondio
  */
 public final class ModuleDescriptorBuilder {
+    private ModuleDescriptorBuilderProduct moduleDescriptorBuilderProduct = new ModuleDescriptorBuilderProduct();
 
-    private ModuleCategory category;
-    private ModuleInputOutputType[] inputTypes;
-    private String name;
-    private String description;
     private int priority = ModulePriority.DEFAULT.getPriority();
-    private String supportURL;
 
     private ModuleDescriptorBuilder() {
         // hide
     }
 
     public ModuleDescriptorBuilder category(ModuleCategory category) {
-        this.category = category;
-        return this;
+        return moduleDescriptorBuilderProduct.category(category, this);
     }
 
     public ModuleDescriptorBuilder inputTypes(ModuleInputOutputType... inputTypes) {
-        this.inputTypes = inputTypes;
-        return this;
+        return moduleDescriptorBuilderProduct.inputTypes(this, inputTypes);
     }
 
     public ModuleDescriptorBuilder name(String name) {
-        this.name = name;
-        return this;
+        return moduleDescriptorBuilderProduct.name(name, this);
     }
 
     public ModuleDescriptorBuilder description(String description) {
-        this.description = description;
-        return this;
+        return moduleDescriptorBuilderProduct.description(description, this);
     }
 
     public ModuleDescriptorBuilder priority(int priority) {
@@ -71,13 +59,12 @@ public final class ModuleDescriptorBuilder {
     }
 
     public ModuleDescriptorBuilder supportURL(String supportURL) {
-        this.supportURL = supportURL;
-        return this;
+        return moduleDescriptorBuilderProduct.supportURL(supportURL, this);
     }
 
     /**
      * factory method
-     * 
+     *
      * @return the builder instance
      */
     public static ModuleDescriptorBuilder builder() {
@@ -85,9 +72,6 @@ public final class ModuleDescriptorBuilder {
     }
 
     public ModuleDescriptor build() {
-        requireNotNullArg(category, "Module category cannot be null");
-        requireNotBlank(name, "Module name cannot be blank");
-        requireNotBlank(description, "Module description cannot be blank");
-        return new ModuleDescriptor(category, name, description, priority, supportURL, inputTypes);
+        return moduleDescriptorBuilderProduct.build(this.priority);
     }
 }
