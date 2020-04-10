@@ -23,24 +23,27 @@ import static org.pdfsam.eventstudio.StaticStudio.eventStudio;
 
 import java.io.File;
 import java.nio.file.Files;
+import java.util.List;
 
-import javafx.stage.DirectoryChooser;
+import javafx.collections.ObservableList;
+import javafx.stage.FileChooser;
+import javafx.stage.FileChooser.ExtensionFilter;
 import javafx.stage.Window;
 
 /**
- * Wrapper around a {@link DirectoryChooser} thats remembers its latest working directory. Subsequent openings will have initial directory set to it.
+ * Wrapper around a {@link FileChooser} thats remembers its latest working directory. Subsequent openings will have initial directory set to it.
  * 
  * @author Andrea Vacondio
  *
  */
-class RememberingLatestDirectoryChooserWrapper extends BaseRememberingLatestChooser {
-    private DirectoryChooser wrapped = new DirectoryChooser();
+public class RememberingLatestFileChooserWrapper extends BaseRememberingLatestChooser {
+    private FileChooser wrapped = new FileChooser();
 
-    public RememberingLatestDirectoryChooserWrapper() {
+    public RememberingLatestFileChooserWrapper() {
         eventStudio().addAnnotatedListeners(this);
     }
 
-    public final void setTitle(String value) {
+    final void setTitle(String value) {
         wrapped.setTitle(value);
     }
 
@@ -49,16 +52,81 @@ class RememberingLatestDirectoryChooserWrapper extends BaseRememberingLatestChoo
         wrapped.setInitialDirectory(value);
     }
 
-    public File showDialog(Window ownerWindow) {
-        if (ofNullable(wrapped.getInitialDirectory()).map(File::toPath).filter(f -> !Files.isDirectory(f))
-                .isPresent()) {
-            wrapped.setInitialDirectory(null);
-        }
-        File selected = wrapped.showDialog(ownerWindow);
-        if (selected != null && selected.isDirectory()) {
-            eventStudio().broadcast(new SetLatestDirectoryEvent(selected));
+    public final void setInitialFileName(String value) {
+        wrapped.setInitialFileName(value);
+    }
+
+    public List<File> showOpenMultipleDialog(Window ownerWindow) {
+        sanitizeInitialDirectory();
+        List<File> selected = wrapped.showOpenMultipleDialog(ownerWindow);
+        if (selected != null && !selected.isEmpty()) {
+            notifyNewLatestDirectory(selected.get(0));
         }
         return selected;
     }
 
+    public void sanitizeInitialDirectory() {
+        if (ofNullable(wrapped.getInitialDirectory()).map(File::toPath).filter(f -> !Files.isDirectory(f))
+                .isPresent()) {
+            wrapped.setInitialDirectory(null);
+        }
+    }
+
+    /**
+     * Shows the file chooser dialog of the given type
+     * 
+     * @param type
+     * @return the selected file or null
+     */
+    public File showDialog(OpenType type) {
+        return showDialog(null, type);
+    }
+
+    /**
+     * Shows the file chooser dialog of the given type
+     * 
+     * @param ownerWindow
+     *            the window owning the dialog
+     * @param type
+     * @return the selected file or null
+     */
+    public File showDialog(Window ownerWindow, OpenType type) {
+        File selected = null;
+        selected = getTypeObject(type).showDialog(selected, ownerWindow, this);
+        notifyNewLatestDirectory(selected);
+        return selected;
+    }
+
+    private void notifyNewLatestDirectory(File selected) {
+        if (selected != null && selected.isFile()) {
+            eventStudio().broadcast(new SetLatestDirectoryEvent(selected.getParentFile()));
+        }
+    }
+
+    ObservableList<ExtensionFilter> getExtensionFilters() {
+        return wrapped.getExtensionFilters();
+    }
+
+    private Type getTypeObject(OpenType type) {
+        switch (type) {
+            case SAVE:
+                return new Save();
+        }
+        return null;
+    }
+
+    public FileChooser getWrapped() {
+        return wrapped;
+    }
+
+    /**
+     * Possible type of open dialogs
+     * 
+     * @author Andrea Vacondio
+     *
+     */
+    public static enum OpenType {
+        OPEN,
+        SAVE;
+    }
 }
